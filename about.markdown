@@ -32,7 +32,6 @@ The Built Environment and Health Project has two Geographers/GIS Analysts at Col
 
 ##<a name="pubs"></a>Publications
 * [Google Scholar](http://scholar.google.com/citations?user=K6iTYsUAAAAJ&hl=en)
-* [LinkedIn](https://www.linkedin.com/pub/daniel-sheehan/53/10b/984)
 
 Add List of publications.
 
@@ -47,7 +46,7 @@ Send me an [email](mailto:daniel.martin.sheehan@gmail.com).
 
 
 ##<a name="teaching"></a>Teaching and GIS Training
-
+Contact the BEH GIS Group for training and teaching Geographic Information Systems (GIS) or see the [GIS course available at EPIC 2015](https://cuepisummer.org/course/geographic-information-systems). 
 
 ---
 

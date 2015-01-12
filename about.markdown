@@ -15,14 +15,15 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 
 ####<a name="top"></a>*Menu*
 * [Info](#info)
-* [Publications](#pubs)
-* [Contact](#contact)
+
+<!-- * [Publications](#pubs)
+* [Contact](#contact) -->
 
 
 
----
+<!-----
 
-The Built Environment and Health Project has two Geographers/GIS Analysts at Columbia University, Department of Epidemiology.
+The Built Environment and Health Project has two Geographers/GIS Analysts at Columbia University, Department of Epidemiology.-->
 
 ---
 
@@ -32,12 +33,12 @@ Built Environment and Health (BEH) Research Group is an interdisciplinary progra
 
 ---
 
-##<a name="pubs"></a>Publications
+<!--##<a name="pubs"></a>Publications
 * [Google Scholar](http://scholar.google.com/citations?user=K6iTYsUAAAAJ&hl=en)
 
 Add List of publications.
 
----
+----->
 
 <!--
 ##<a name="contact"></a>Contact

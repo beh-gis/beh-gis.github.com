@@ -14,7 +14,11 @@ permalink: /data/
 
 ---
 
-<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability.png" width="50%" height="50%" alt="walkability"/></center>
+<!--<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability.png" width="50%" height="50%" alt="walkability"/></center>
+-->
+
+<iframe width='100%' height='400' frameborder='0' src='http://cartodbacademy.cartodb.com/viz/ab345438-f185-11e3-80b8-0e73339ffa50/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+*This map is Percent Tree Canopy (2010) Quartiles by Census Block (2010) but we could modify to walkability.* 
 
 ---
 

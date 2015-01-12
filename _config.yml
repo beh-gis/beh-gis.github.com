@@ -4,9 +4,9 @@ email:
 description: > # this means to ignore newlines until "baseurl:"
   GIS for the Built Environment and Health Project at Columbia University.
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://nygeog.com" # the base hostname & protocol for your site
-# twitter_username: nygeog
-# github_username:  nygeog
+url: "http://beh.columbia.edu" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  beh-gis
 
 # Build settings
 markdown: kramdown

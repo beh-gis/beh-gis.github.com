@@ -4,10 +4,10 @@
     <title>BEH-GIS</title>
     <description>Geographic Information Systems (GIS) Group for the Built Environment and Health Project at Columbia University.
 </description>
-    <link>http://beh.columbia.edu/</link>
-    <atom:link href="http://beh.columbia.edu/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Jan 2015 15:51:28 -0500</pubDate>
-    <lastBuildDate>Mon, 12 Jan 2015 15:51:28 -0500</lastBuildDate>
+    <link>http://beh-gis.github.io/</link>
+    <atom:link href="http://beh-gis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 12 Jan 2015 15:52:44 -0500</pubDate>
+    <lastBuildDate>Mon, 12 Jan 2015 15:52:44 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Wed, 31 Dec 2014 07:21:10 -0500</pubDate>
-        <link>http://beh.columbia.edu/jekyll/update/2014/12/31/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://beh.columbia.edu/jekyll/update/2014/12/31/welcome-to-jekyll.html</guid>
+        <link>http://beh-gis.github.io/jekyll/update/2014/12/31/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://beh-gis.github.io/jekyll/update/2014/12/31/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>

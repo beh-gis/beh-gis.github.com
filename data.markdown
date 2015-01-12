@@ -20,7 +20,7 @@ permalink: /data/
 
 ---
 
-* **Census Block (2010)**
+<!--* **Census Block (2010)**
 	
 	* *Walkability Tables*
 		
@@ -32,7 +32,7 @@ permalink: /data/
 			
 	* *Data Dictionary*
 		
-		* Download Data Dictionary
+		* Download Data Dictionary-->
 			
 * **Census Tract (2010)**
 	

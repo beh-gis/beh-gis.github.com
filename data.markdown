@@ -1,14 +1,11 @@
 ---
 layout: page
-title: BEH
-permalink: /beh/
+title: Data
+permalink: /data/
 ---
 
 
-TEST
 
-#The Built Environment and Health Project (BEH) 
-The [BEH Website.](http://beh.columbia.edu/)
 
 ---
 

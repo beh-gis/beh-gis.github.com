@@ -12,8 +12,11 @@ permalink: /data/
 
 ##Walkability Data
 
+---
 
 <center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability.png" width="50%" height="50%" alt="walkability"/></center>
+
+---
 
 * **Census Block (2010)**
 	

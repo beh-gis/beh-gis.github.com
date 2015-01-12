@@ -13,8 +13,8 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 
 ---
 
-####<a name="top"></a>*Menu*
-* [Info](#info)
+<!--####<a name="top"></a>*Menu*
+* [Info](#info)-->
 
 <!-- * [Publications](#pubs)
 * [Contact](#contact) -->

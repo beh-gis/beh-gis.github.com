@@ -28,6 +28,8 @@ The Built Environment and Health Project has two Geographers/GIS Analysts at Col
 
 ##<a name="info"></a>Info
 
+Built Environment and Health (BEH) Research Group is an interdisciplinary program of research at Columbia University. Led by epidemiologist Andrew Rundle and sociologist Kathryn Neckerman, BEH uses spatial data to examine the impact of the built environment, including land use, public transit, and housing on physical activity, diet, obesity, and other aspects of health. The group has participants from public health, social science, and urban planning with a research staff based at the Department of Epidemiology at the Mailman School of Public Health and at the Columbia Population Research Center.  Other members of the team are at New York University, American University and Smith College.
+
 ---
 
 ##<a name="pubs"></a>Publications
@@ -37,11 +39,11 @@ Add List of publications.
 
 ---
 
-
+<!--
 ##<a name="contact"></a>Contact
 Send me an [email](mailto:daniel.martin.sheehan@gmail.com).
 
----
+----->
 
 
 

@@ -81,3 +81,10 @@ permalink: /data/
 		
 		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/GIS-Codebook-UHF42-12dec2014.pdf?raw=true)
 	
+	
+---
+
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability.png" width="50%" height="50%" alt="walkability"/></center>
+
+
+---

@@ -60,7 +60,7 @@ permalink: /data/
 			
 	* *GIS Shapefiles*
 		
-		* UHF 42
+		* [NYC DOHMH UHF 42 Shapefile](https://www1.nyc.gov/html/doh/downloads/zip/uhf42_dohmh_2009.zip)
 			
 	* *Data Dictionary*
 		

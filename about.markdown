@@ -14,9 +14,9 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 ---
 
 ####<a name="top"></a>*Menu*
-* [Staff](#staff)
-* [Info](#info)
-
+* [About BEH](#info)
+* [BEH GIS Staff](#staff)
+* [Teaching and GIS Training](#teaching)
 
 <!-- * [Publications](#pubs)
 * [Contact](#contact) -->
@@ -26,8 +26,15 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 <!-----
 
 The Built Environment and Health Project has two Geographers/GIS Analysts at Columbia University, Department of Epidemiology.-->
+---
 
-###<a name="staff"></a>GIS Staff
+##<a name="info"></a>About The Built Environment and Health (BEH) Project
+
+Built Environment and Health (BEH) Research Group is an interdisciplinary program of research at Columbia University. Led by epidemiologist Andrew Rundle and sociologist Kathryn Neckerman, BEH uses spatial data to examine the impact of the built environment, including land use, public transit, and housing on physical activity, diet, obesity, and other aspects of health. The group has participants from public health, social science, and urban planning with a research staff based at the Department of Epidemiology at the Mailman School of Public Health and at the Columbia Population Research Center.  Other members of the team are at New York University, American University and Smith College.
+
+---
+
+###<a name="staff"></a>BEH GIS Staff
 
 ---
 
@@ -46,11 +53,6 @@ James Quinn is a Geographer and Senior Geographic Information Systems (GIS) Anal
 Daniel M. Sheehan is a Geographer and Geospatial/Geographic Information Systems (GIS) Analyst at the Department of Epidemiology at Columbia University. As a member of the Built Environment and Health Project research group he builds, maintains and processes geospatial databases for environmental health-related projects. Danny earned a BA in Geography from [**Geneseo**](http://www.geneseo.edu/geography) and completed his MA in Geography/Specialization in GIS from [**University at Buffalo**](http://www.buffalo.edu/cas/geography.html). Prior to joining the BEH GIS research team, he worked as a GIS Analyst for engineering firms, managing engineering design data and analyzing impacts on the built social and natural environment as part of the EIS process.
 
 
----
-
-##<a name="info"></a>Info
-
-Built Environment and Health (BEH) Research Group is an interdisciplinary program of research at Columbia University. Led by epidemiologist Andrew Rundle and sociologist Kathryn Neckerman, BEH uses spatial data to examine the impact of the built environment, including land use, public transit, and housing on physical activity, diet, obesity, and other aspects of health. The group has participants from public health, social science, and urban planning with a research staff based at the Department of Epidemiology at the Mailman School of Public Health and at the Columbia Population Research Center.  Other members of the team are at New York University, American University and Smith College.
 
 ---
 

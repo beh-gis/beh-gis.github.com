@@ -36,7 +36,7 @@ permalink: /data/
 		
 		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)
 			
-* **Community District (2010)**
+* **Community District**
 	
 	* *Walkability Tables*
 		
@@ -51,7 +51,7 @@ permalink: /data/
 		
 		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/GIS-Codebook-CommunityDistricts-12dec2014.pdf?raw=true)
 			
-* **UHF (42) (2010)**
+* **UHF (42) (2009)**
 	
 	* *Walkability Tables*
 		

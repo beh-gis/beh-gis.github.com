@@ -51,8 +51,7 @@ James Quinn is a Geographer and Senior Geographic Information Systems (GIS) Anal
 **Geographer/GIS Analyst**
 
 Daniel M. Sheehan is a Geographer and Geospatial/Geographic Information Systems (GIS) Analyst at the Department of Epidemiology at Columbia University. As a member of the Built Environment and Health Project research group he builds, maintains and processes geospatial databases for environmental health-related projects. Danny earned a BA in Geography from [**Geneseo**](http://www.geneseo.edu/geography) and completed his MA in Geography/Specialization in GIS from [**University at Buffalo**](http://www.buffalo.edu/cas/geography.html). Prior to joining the BEH GIS research team, he worked as a GIS Analyst for engineering firms, managing engineering design data and analyzing impacts on the built social and natural environment as part of the EIS process.
-
-
+[Daniel's personal website](http://nygeog.com)
 
 ---
 

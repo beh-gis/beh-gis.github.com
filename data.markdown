@@ -14,28 +14,12 @@ permalink: /data/
 
 
 ---
+
 <center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability_tract_legend_clip.png" width="35%" height="35%" alt="walkability"/></center>
-<!--<iframe width='100%' height='400' frameborder='0' src='http://cartodbacademy.cartodb.com/viz/ab345438-f185-11e3-80b8-0e73339ffa50/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>-->
+
 <iframe width='100%' height='520' frameborder='0' src='http://dms2203.cartodb.com/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-
-<!--*This map is Percent Tree Canopy (2010) Quartiles by Census Block (2010) but we could modify to walkability.* -->
-
 ---
-
-<!--* **Census Block (2010)**
-	
-	* *Walkability Tables*
-		
-		* Download BEH Walkability CSV
-			
-	* *GIS Shapefiles*
-		
-		* [NYC Department of City Planning 2010 Census Blocks (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nycb2010_14d.zip)
-			
-	* *Data Dictionary*
-		
-		* Download Data Dictionary-->
 			
 * **Census Tract (2010)**
 	
@@ -83,7 +67,5 @@ permalink: /data/
 		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/GIS-Codebook-UHF42-12dec2014.pdf?raw=true)
 	
 [Top](#top)	
-
-
 
 ---

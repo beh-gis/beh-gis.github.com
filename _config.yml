@@ -2,7 +2,7 @@
 title: Built Environment and Health Project
 email: 
 description: > # this means to ignore newlines until "baseurl:"
-  Geographic Information Systems (GIS) Group for the Built Environment and Health Project at Columbia University.
+  Geographic Information Systems (GIS) Group for the Built Environment and Health Project (http://beh.columbia.edu) at Columbia University.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://beh-gis.github.io" # the base hostname & protocol for your site
 twitter_username: 

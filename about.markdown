@@ -33,7 +33,7 @@ The Built Environment and Health Project has two Geographers/GIS Analysts at Col
 
 ####James Quinn
 
-#####Senior Geographer/GIS Analyst
+**Senior Geographer/GIS Analyst**
 
 James Quinn is a Geographer and Senior Geographic Information Systems (GIS) Analyst based at the Department of Epidemiology at Columbia University. He received both his BA and MA in Geography from the [**University of Northern Iowa**](http://www.uni.edu/csbs/geography/). Quinn conducts medical geography research and works on numerous grant-funded research projects where he is responsible for the acquisition, management, development, and linkage of retrospective and modern spatial databases measuring neighborhood characteristics with individual-level data. Using non-routine spatial modeling techniques, Quinn, makes connections between the changes in the physical, economic, and social environments, and evaluates their affect on the development of changes in physical activity, patterns of obesity, and health risk. Quinn also supports other researchers with health-related projects involving a spatial perspective, and collaborates with other colleagues to enhance and promote the use of spatial analysis in teaching and research at Columbia.
 
@@ -41,7 +41,7 @@ James Quinn is a Geographer and Senior Geographic Information Systems (GIS) Anal
 
 ####Daniel M. Sheehan
 
-#####Geographer/GIS Analyst
+**Geographer/GIS Analyst**
 
 Daniel M. Sheehan is a Geographer and Geospatial/Geographic Information Systems (GIS) Analyst at the Department of Epidemiology at Columbia University. As a member of the Built Environment and Health Project research group he builds, maintains and processes geospatial databases for environmental health-related projects. Danny earned a BA in Geography from [**Geneseo**](http://www.geneseo.edu/geography) and completed his MA in Geography/Specialization in GIS from [**University at Buffalo**](http://www.buffalo.edu/cas/geography.html). Prior to joining the BEH GIS research team, he worked as a GIS Analyst for engineering firms, managing engineering design data and analyzing impacts on the built social and natural environment as part of the EIS process.
 

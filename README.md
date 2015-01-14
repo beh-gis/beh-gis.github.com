@@ -1,2 +1,2 @@
-beh-gis.github.com
+[beh-gis.github.com](http://beh-gis.github.io)
 =================

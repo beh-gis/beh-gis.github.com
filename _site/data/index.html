@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://beh-gis.github.io/data/">
-  <link rel="alternate" type="application/rss+xml" title="BEH GIS" href="http://beh-gis.github.io/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Built Environment and Health Project" href="http://beh-gis.github.io/feed.xml" />
 </head>
 
 
@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">BEH GIS</a>
+    <a class="site-title" href="/">Built Environment and Health Project</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -49,6 +49,8 @@
         
           
         
+          
+        
       </div>
     </nav>
 
@@ -66,46 +68,30 @@
   </header>
 
   <article class="post-content">
-    <hr />
+    <h4 id="a-nametopamenu"><a name="top"></a><em>Menu</em></h4>
+<ul>
+  <li><a href="#walk">Walkability</a></li>
+</ul>
 
-<h2 id="walkability-data">Walkability Data</h2>
+<hr />
 
-<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability.png" width="50%" height="50%" alt="walkability" /></center>
+<h2 id="a-namewalkawalkability-data"><a name="walk"></a>Walkability Data</h2>
+
+<hr />
+
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability_tract_legend_clip.png" width="35%" height="35%" alt="walkability" /></center>
+
+<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
+
+<hr />
 
 <ul>
-  <li>
-    <p><strong>Census Block (2010)</strong></p>
-
-    <ul>
-      <li>
-        <p>Walkability Tables</p>
-
-        <ul>
-          <li>Download BEH Walkability CSV</li>
-        </ul>
-      </li>
-      <li>
-        <p>GIS Shapefiles</p>
-
-        <ul>
-          <li><a href="http://www.nyc.gov/html/dcp/download/bytes/nycb2010_14d.zip">NYC Department of City Planning 2010 Census Blocks (Clipped to Shoreline) Shapefile</a></li>
-        </ul>
-      </li>
-      <li>
-        <p>Data Dictionary</p>
-
-        <ul>
-          <li>Download Data Dictionary</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
   <li>
     <p><strong>Census Tract (2010)</strong></p>
 
     <ul>
       <li>
-        <p>Walkability Tables</p>
+        <p><em>Walkability Tables</em></p>
 
         <ul>
           <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/t10_walkability_recalc.csv">Download BEH Walkability CSV</a></li>
@@ -113,14 +99,14 @@
         </ul>
       </li>
       <li>
-        <p>GIS Shapefiles</p>
+        <p><em>GIS Shapefiles</em></p>
 
         <ul>
-          <li><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a></li>
+          <li><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> Note: NYC DCP’s Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.</li>
         </ul>
       </li>
       <li>
-        <p>Data Dictionary</p>
+        <p><em>Data Dictionary</em></p>
 
         <ul>
           <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true">Download Data Dictionary</a></li>
@@ -129,11 +115,11 @@
     </ul>
   </li>
   <li>
-    <p><strong>Community District (2010)</strong></p>
+    <p><strong>Community District</strong></p>
 
     <ul>
       <li>
-        <p>Walkability Tables</p>
+        <p><em>Walkability Tables</em></p>
 
         <ul>
           <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/comdist_gis_metrics_11dec2014.csv">Download BEH Walkability CSV</a></li>
@@ -141,14 +127,14 @@
         </ul>
       </li>
       <li>
-        <p>GIS Shapefiles</p>
+        <p><em>GIS Shapefiles</em></p>
 
         <ul>
           <li><a href="http://www.nyc.gov/html/dcp/download/bytes/nycd_14d.zip">NYC Department of City Planning Community Districts Shapefile</a></li>
         </ul>
       </li>
       <li>
-        <p>Data Dictionary</p>
+        <p><em>Data Dictionary</em></p>
 
         <ul>
           <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/GIS-Codebook-CommunityDistricts-12dec2014.pdf?raw=true">Download Data Dictionary</a></li>
@@ -157,11 +143,11 @@
     </ul>
   </li>
   <li>
-    <p><strong>UHF (42) (2010)</strong></p>
+    <p><strong>UHF (42) (2009)</strong></p>
 
     <ul>
       <li>
-        <p>Walkability Tables</p>
+        <p><em>Walkability Tables</em></p>
 
         <ul>
           <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/uhf42_gis_metrics_11dec2014.csv">Download BEH Walkability CSV</a></li>
@@ -169,14 +155,14 @@
         </ul>
       </li>
       <li>
-        <p>GIS Shapefiles</p>
+        <p><em>GIS Shapefiles</em></p>
 
         <ul>
-          <li>UHF 42</li>
+          <li><a href="https://www1.nyc.gov/html/doh/downloads/zip/uhf42_dohmh_2009.zip">NYC DOHMH UHF 42 Shapefile</a></li>
         </ul>
       </li>
       <li>
-        <p>Data Dictionary</p>
+        <p><em>Data Dictionary</em></p>
 
         <ul>
           <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/GIS-Codebook-UHF42-12dec2014.pdf?raw=true">Download Data Dictionary</a></li>
@@ -186,6 +172,9 @@
   </li>
 </ul>
 
+<p><a href="#top">Top</a>	</p>
+
+<hr />
 
   </article>
 
@@ -198,12 +187,12 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">BEH GIS</h2>
+    <!-- <h2 class="footer-heading">Built Environment and Health Project</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>BEH GIS</li>
+          <li>Built Environment and Health Project</li>
           <li><a href="mailto:"></a></li>
         </ul>
       </div>

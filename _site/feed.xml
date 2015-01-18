@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Built Environment and Health Project</title>
-    <description>Geographic Information Systems (GIS) Group for the Built Environment and Health Project at Columbia University.
+    <title>Built Environment and Health</title>
+    <description>Geographic Information Systems (GIS) Group for the Built Environment and Health Research Group at Columbia University.
 </description>
     <link>http://beh-gis.github.io/</link>
     <atom:link href="http://beh-gis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Jan 2015 13:56:55 -0500</pubDate>
-    <lastBuildDate>Sat, 17 Jan 2015 13:56:55 -0500</lastBuildDate>
+    <pubDate>Sun, 18 Jan 2015 12:04:55 -0500</pubDate>
+    <lastBuildDate>Sun, 18 Jan 2015 12:04:55 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>

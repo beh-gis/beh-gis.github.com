@@ -6,7 +6,7 @@ permalink: /data/
 
 ####<a name="top"></a>*Menu*
 * [Walkability](#walk)
-
+* [Tree Canopy](#tree)
   
 ---
 
@@ -68,4 +68,27 @@ permalink: /data/
 	
 [Top](#top)	
 
+<!-----
+
+##<a name="tree"></a>Tree Canopy Data
+
 ---
+
+* **Census Tract (2010)**
+	
+	* *Tree Canopy Tables*
+		
+		* [Download BEH Tree Canopy CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/t10_walkability_recalc.csv)
+		* [View BEH Tree Canopy Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/walkability/data/t10_walkability_recalc.csv)
+			
+	* *GIS Shapefiles*
+		
+		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) Note: NYC DCP's Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.
+			
+	* *Data Dictionary*
+		
+		Update Data Dictionary link
+		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)
+	
+
+[Top](#top)		-->	

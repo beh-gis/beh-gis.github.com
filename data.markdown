@@ -6,7 +6,7 @@ permalink: /data/
 
 ####<a name="top"></a>*Menu*
 * [Walkability](#walk)
-* [Tree Canopy](#tree)
+<!--* [Tree Canopy](#tree)-->
   
 ---
 

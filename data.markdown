@@ -30,7 +30,7 @@ permalink: /data/
 			
 	* *GIS Shapefiles*
 	
-		* [Download the joined Walkability Data and the NYC 2010 Tracts in CartoDB](https://dms2203.cartodb.com/tables/nyct2010_walkability)
+		* [Download the joined Walkability Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](https://dms2203.cartodb.com/tables/nyct2010_walkability)
 		
 		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) Note: NYC DCP's Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.
 			

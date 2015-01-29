@@ -72,7 +72,9 @@ permalink: /data/
 	
 [Top](#top)	
 
-<!-----
+<!--
+
+---
 
 ##<a name="tree"></a>Tree Canopy Data
 
@@ -111,7 +113,7 @@ This tool is only available for the following Census Geography levels:
 
 **Note:** This tool is currently in development so please <a href="mailto:dms2203@cumc.columbia.edu?Subject=BEH-GIS%20Census%20Data%20API%20Download%20Tool%20Bug%20Alert" target="_top">report bugs or issues.</a>
 
-**JSON Info**:
+JSON File Format Resources:
 	
 * [JSON.org](http://www.json.org/)
 * [Using JSON in R](http://cran.r-project.org/web/packages/rjson/rjson.pdf)

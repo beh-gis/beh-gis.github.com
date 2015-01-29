@@ -101,6 +101,8 @@ permalink: /data/
 
 ##<a name="census"></a>BEH US Census Data API Download Tool (beta 0.1)
 
+---
+
 **[Download US Census Data to JSON via the BEH Census Data API Download Tool](http://beh-gis.github.io/pages/census_api)**
 
 This tool is only available for the following Census Geography levels:

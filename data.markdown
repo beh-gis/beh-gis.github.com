@@ -6,7 +6,7 @@ permalink: /data/
 
 ####<a name="top"></a>*Menu*
 * [Walkability](#walk)
-* [BEH Census Data API Download Tool](#census)
+* [US Census Data Download Tool](#census)
 <!--* [Tree Canopy](#tree)-->
   
 ---
@@ -18,8 +18,8 @@ permalink: /data/
 
 <center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability_tract_legend_clip.png" width="35%" height="35%" alt="walkability"/></center>
 
-<!--<iframe width='100%' height='520' frameborder='0' src='http://dms2203.cartodb.com/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
--->
+<iframe width='100%' height='520' frameborder='0' src='http://dms2203.cartodb.com/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
 
 ---
 			
@@ -99,7 +99,7 @@ permalink: /data/
 
 ---
 
-##<a name="census"></a>BEH Census Data API Download Tool (beta 0.1)
+##<a name="census"></a>BEH US Census Data API Download Tool (beta 0.1)
 
 **[Download US Census Data to JSON via the BEH Census Data API Download Tool](http://beh-gis.github.io/pages/census_api)**
 
@@ -108,5 +108,11 @@ This tool is only available for the following Census Geography levels:
 * Census Tract
 
 **Note:** This tool is currently in development so please <a href="mailto:dms2203@cumc.columbia.edu?Subject=BEH-GIS%20Census%20Data%20API%20Download%20Tool%20Bug%20Alert" target="_top">report bugs or issues.</a>
+
+**JSON Info**:
+	
+* [JSON.org](http://www.json.org/)
+* [Using JSON in R](http://cran.r-project.org/web/packages/rjson/rjson.pdf)
+* [Using JSON in Python](https://docs.python.org/2/library/json.html)
 
 [Top](#top)	

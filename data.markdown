@@ -103,6 +103,10 @@ permalink: /data/
 
 **[Download US Census Data to JSON via the BEH Census Data API Download Tool](http://beh-gis.github.io/pages/census_api)**
 
-This tool is currently in development so please <a href="mailto:dms2203@cumc.columbia.edu?Subject=BEH-GIS%20Census%20Data%20API%20Download%20Tool%20Bug%20Alert" target="_top">report bugs or issues.</a>
+This tool is only available for the following Census Geography levels:
+
+* Census Tract
+
+**Note:** This tool is currently in development so please <a href="mailto:dms2203@cumc.columbia.edu?Subject=BEH-GIS%20Census%20Data%20API%20Download%20Tool%20Bug%20Alert" target="_top">report bugs or issues.</a>
 
 [Top](#top)	

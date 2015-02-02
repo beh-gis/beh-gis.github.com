@@ -122,6 +122,10 @@ This tool is only available for the following Census Geography levels:
 
 * Census Tract
 
+This tool is only available for the following Census Variables:
+
+* Total Population (or estimate for ACS)
+
 **Note:** This tool is currently in development so please <a href="mailto:dms2203@cumc.columbia.edu?Subject=BEH-GIS%20Census%20Data%20API%20Download%20Tool%20Bug%20Alert" target="_top">report bugs or issues.</a>
 
 JSON File Format Resources:

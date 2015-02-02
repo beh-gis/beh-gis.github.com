@@ -96,7 +96,7 @@ permalink: /data/
 		* [View BEH Tree Canopy Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/tree_canopy/data/ct10_tree_canopy.csv)
 			
 	* *GIS Shapefiles*
-		* [Download the joined Tree Canopy Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](https://dms2203.cartodb.com/tables/nyct2010_walkability)
+		* [Download the joined Tree Canopy Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](http://dms2203.cartodb.com/tables/ct10_tree_canopy/public)
 		
 		
 		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) 

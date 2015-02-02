@@ -6,8 +6,9 @@ permalink: /data/
 
 ####<a name="top"></a>*Menu*
 * [Walkability](#walk)
+* [Tree Canopy](#tree)
 * [US Census Data Download Tool](#census)
-<!--* [Tree Canopy](#tree)-->
+
   
 ---
 

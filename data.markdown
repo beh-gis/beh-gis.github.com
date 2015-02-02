@@ -128,8 +128,8 @@ permalink: /data/
 	
 	* *Tree Canopy Tables*
 		
-		* [Download BEH Alcohol License Data CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/tree_canopy/data/ct10_tree_canopy.csv)
-		* [View BEH Alcohol License Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/tree_canopy/data/ct10_tree_canopy.csv)
+		* [Download Alcohol License Data CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv)
+		* [View Alcohol License Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv)
 			
 	* *GIS Shapefiles*
 		* [Download the joined Alcohol License Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](https://dms2203.cartodb.com/tables/ct10_alcohol_licenses/public)

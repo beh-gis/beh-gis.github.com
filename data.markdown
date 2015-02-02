@@ -8,6 +8,7 @@ permalink: /data/
 * [Walkability](#walk)
 * [Tree Canopy](#tree)
 * [Alcohol Licensing](#alcohol)
+* [US Census American Community Survey Data 2006-2010](#acs0610)
 * [US Census Data Download Tool](#census)
 <!--* [FAQ]()-->
   
@@ -24,6 +25,8 @@ permalink: /data/
 
 
 ---
+
+This dataset represents BEH's Walkability Measure by NYC DCP Census Tract (2010).
 			
 * **Census Tract (2010)**
 	
@@ -88,6 +91,7 @@ permalink: /data/
 
 ---
 
+This dataset represents the percent of the NYC DCP Census Tract (2010) covered by Tree Canopy. 
 
 * **Census Tract (2010)**
 	
@@ -123,10 +127,18 @@ permalink: /data/
 
 ---
 
+This dataset represents count of Alcohol Licenses by NYC DCP Census Tract (2010) which BEH received via email 2013/04/21 from NY State Liquor Authority. 
+
+* License Categories
+	* 1 = On Premise
+	* 2 = Off Premise
+	* 3 = Wholesale
+	* 4 = Pending
+	* 5 = Disabled
 
 * **Census Tract (2010)**
 	
-	* *Tree Canopy Tables*
+	* *Alcohol License Tables*
 		
 		* [Download Alcohol License Data CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv)
 		* [View Alcohol License Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv)
@@ -144,6 +156,39 @@ permalink: /data/
 	
 
 [Top](#top)		
+
+---
+
+##<a name="acs0610"></a>US Census American Community Survey Data 2006-2010
+
+---
+
+
+
+This dataset represents US Census American Community Survey Data 2006-2010 by NYC DCP Census Tract (2010). 
+
+
+
+* **Census Tract (2010)**
+	
+	* *US Census American Community Survey Data 2006-2010 Tables*
+		
+		* [Download US Census American Community Survey Data 2006-2010 CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/acs_2006_10/ct10_acs_2006_10.csv) Note: Large File ~78 MB
+		
+			
+	* *GIS Shapefiles*
+		<!--* [Download the joined Alcohol License Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](https://dms2203.cartodb.com/tables/ct10_alcohol_licenses/public)-->
+		
+		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) 
+
+		
+	* *Data Dictionary*
+		
+		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/acs_2006_10/Codebook-Tracts2010-ACS-2006-10.pdf?raw=true)
+	
+
+[Top](#top)		
+
 
 
 ---

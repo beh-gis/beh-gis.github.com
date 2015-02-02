@@ -7,8 +7,9 @@ permalink: /data/
 ####<a name="top"></a>*Menu*
 * [Walkability](#walk)
 * [Tree Canopy](#tree)
+* [Alcohol Licensing](#alcohol)
 * [US Census Data Download Tool](#census)
-
+<!--* [FAQ]()-->
   
 ---
 
@@ -109,6 +110,43 @@ permalink: /data/
 	
 
 [Top](#top)		
+
+---
+
+##<a name="alcohol"></a>Alcohol License Data
+
+---
+
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/alochol_tract_legend_clip.png" width="35%" height="35%" alt="walkability"/></center>
+
+
+<iframe width='100%' height='520' frameborder='0' src='http://dms2203.cartodb.com/viz/b5f847d8-ab27-11e4-8da3-0e9d821ea90d/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+---
+
+
+* **Census Tract (2010)**
+	
+	* *Tree Canopy Tables*
+		
+		* [Download BEH Alcohol License Data CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/tree_canopy/data/ct10_tree_canopy.csv)
+		* [View BEH Alcohol License Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/tree_canopy/data/ct10_tree_canopy.csv)
+			
+	* *GIS Shapefiles*
+		* [Download the joined Alcohol License Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](http://dms2203.cartodb.com/tables/ct10_tree_canopy/public)
+		
+		
+		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) 
+
+		
+	* *Data Dictionary*
+		
+		Coming soon.
+		<!--* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)-->
+	
+
+[Top](#top)		
+
 
 ---
 

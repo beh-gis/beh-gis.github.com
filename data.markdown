@@ -72,7 +72,7 @@ permalink: /data/
 	
 [Top](#top)	
 
-<!--
+
 
 ---
 
@@ -80,24 +80,35 @@ permalink: /data/
 
 ---
 
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/tree_canopy_tract_legend_clip.png" width="35%" height="35%" alt="walkability"/></center>
+
+<iframe width='100%' height='520' frameborder='0' src='http://dms2203.cartodb.com/viz/8ea73f6c-ab1e-11e4-9f73-0e0c41326911/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+---
+
+
 * **Census Tract (2010)**
 	
 	* *Tree Canopy Tables*
 		
-		* [Download BEH Tree Canopy CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/t10_walkability_recalc.csv)
-		* [View BEH Tree Canopy Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/walkability/data/t10_walkability_recalc.csv)
+		* [Download BEH Tree Canopy CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/tree_canopy/data/ct10_tree_canopy.csv)
+		* [View BEH Tree Canopy Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/tree_canopy/data/ct10_tree_canopy.csv)
 			
 	* *GIS Shapefiles*
+		* [Download the joined Tree Canopy Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](https://dms2203.cartodb.com/tables/nyct2010_walkability)
 		
-		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) Note: NYC DCP's Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.
+		
+		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) 
+
+<!-- Note: NYC DCP's Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.
 			
 	* *Data Dictionary*
 		
 		Update Data Dictionary link
-		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)
+		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)-->
 	
 
-[Top](#top)		-->	
+[Top](#top)		
 
 ---
 

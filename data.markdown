@@ -101,12 +101,11 @@ permalink: /data/
 		
 		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) 
 
-<!-- Note: NYC DCP's Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.
-			
+		
 	* *Data Dictionary*
 		
-		Update Data Dictionary link
-		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)-->
+		Coming soon.
+		<!--* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)-->
 	
 
 [Top](#top)		

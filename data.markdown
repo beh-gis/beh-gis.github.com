@@ -173,7 +173,7 @@ This dataset represents US Census American Community Survey Data 2006-2010 by NY
 	
 	* *US Census American Community Survey Data 2006-2010 Tables*
 		
-		* [Download US Census American Community Survey Data 2006-2010 CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/acs_2006_10/ct10_acs_2006_10.csv) Note: Large File ~78 MB
+		* [Download US Census American Community Survey Data 2006-2010 CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/acs_2006_10/ct10_acs_2006_2010.csv) 
 		
 			
 	* *GIS Shapefiles*

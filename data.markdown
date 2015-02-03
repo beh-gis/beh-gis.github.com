@@ -163,7 +163,7 @@ This dataset represents count of Alcohol Licenses by NYC DCP Census Tract (2010)
 
 ---
 
-<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/alcohol_tract_legend_clip.png" width="35%" height="35%" alt="alcohol"/></center>
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/mhhi_tract_legend_clip.png" width="35%" height="35%" alt="alcohol"/></center>
 
 <iframe width='100%' height='520' frameborder='0' src='http://dms2203.cartodb.com/viz/0a7e8122-ab38-11e4-9bff-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 

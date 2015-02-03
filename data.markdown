@@ -167,9 +167,11 @@ This dataset represents count of Alcohol Licenses by NYC DCP Census Tract (2010)
 
 <iframe width='100%' height='520' frameborder='0' src='http://dms2203.cartodb.com/viz/0a7e8122-ab38-11e4-9bff-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
+---
+
 This dataset represents US Census American Community Survey Data 2006-2010 by NYC DCP Census Tract (2010). 
 
----
+
 
 * **Census Tract (2010)**
 	

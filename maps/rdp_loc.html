@@ -45,12 +45,7 @@
               }
               </script>
     <script>
-      function mapToPosition(position) {
-          lon = position.coords.longitude;
-          lat = position.coords.latitude;
-          map.setView(new L.LatLng(lat,lon), 7);
-          new L.CircleMarker([lat,lon],{radius: 4}).addTo(map);
-}
+
       function main() {
         cartodb.createVis('map', 'http://dms2203.cartodb.com/api/v2/viz/2d8a77e0-bea0-11e4-8479-0e018d66dc29/viz.json', {
             title: true,
@@ -64,6 +59,7 @@
             search: false,
             shareable: false,
             layer_selector: true,
+            mobile_layout: true,
         })
         .done(function(vis, layers) {
           // layer 0 is the base layer, layer 1 is cartodb layer
@@ -85,6 +81,17 @@
         });
       }
       window.onload = main;
+
+      function mapToPosition(position) {
+          lon = position.coords.longitude;
+          lat = position.coords.latitude;
+          map.setView(new L.LatLng(lat,lon), 7);
+          new L.CircleMarker([lat,lon],{radius: 4}).addTo(map);
+}
+      
+
+
+
 
 
 

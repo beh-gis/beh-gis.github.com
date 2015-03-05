@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Data</title>
-  <meta name="description" content="Geographic Information Systems (GIS) Team Data Portal website for the Built Environment and Health (BEH) Research Group at Columbia University.
+  <meta name="description" content="Geographic Information Systems (GIS) Data Portal for the Built Environment and Health (BEH) Research Group at Columbia University.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
@@ -74,8 +74,12 @@
   <article class="post-content">
     <h4 id="a-nametopamenu"><a name="top"></a><em>Menu</em></h4>
 <ul>
-  <li><a href="#walk">Walkability</a>
-<!--* [Tree Canopy](#tree)--></li>
+  <li><a href="#walk">Walkability</a></li>
+  <li><a href="#tree">Tree Canopy</a></li>
+  <li><a href="#alcohol">Alcohol Licensing</a></li>
+  <li><a href="#acs0610">US Census American Community Survey Data 2006-2010</a></li>
+  <li><a href="#census">US Census Data Download Tool</a>
+<!--* [FAQ]()--></li>
 </ul>
 
 <hr />
@@ -89,6 +93,8 @@
 <iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
 
 <hr />
+
+<p>This dataset represents BEH’s Walkability Measure by NYC DCP Census Tract (2010).</p>
 
 <ul>
   <li>
@@ -184,30 +190,191 @@
 
 <p><a href="#top">Top</a>	</p>
 
-<!-----
+<hr />
 
-##<a name="tree"></a>Tree Canopy Data
+<h2 id="a-nametreeatree-canopy-data"><a name="tree"></a>Tree Canopy Data</h2>
 
----
+<hr />
 
-* **Census Tract (2010)**
-	
-	* *Tree Canopy Tables*
-		
-		* [Download BEH Tree Canopy CSV](https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/t10_walkability_recalc.csv)
-		* [View BEH Tree Canopy Table in Browser](https://github.com/nygeog/beh_public/blob/master/data/walkability/data/t10_walkability_recalc.csv)
-			
-	* *GIS Shapefiles*
-		
-		* [NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile](http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip) Note: NYC DCP's Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.
-			
-	* *Data Dictionary*
-		
-		Update Data Dictionary link
-		* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)
-	
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/tree_canopy_tract_legend_clip.png" width="35%" height="35%" alt="tree canopy" /></center>
 
-[Top](#top)		-->
+<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/8ea73f6c-ab1e-11e4-9f73-0e0c41326911/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
+
+<hr />
+
+<p>This dataset represents the percent of the NYC DCP Census Tract (2010) covered by Tree Canopy. </p>
+
+<ul>
+  <li>
+    <p><strong>Census Tract (2010)</strong></p>
+
+    <ul>
+      <li>
+        <p><em>Tree Canopy Tables</em></p>
+
+        <ul>
+          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/tree_canopy/data/ct10_tree_canopy.csv">Download BEH Tree Canopy CSV</a></li>
+          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/tree_canopy/data/ct10_tree_canopy.csv">View BEH Tree Canopy Table in Browser</a></li>
+        </ul>
+      </li>
+      <li><em>GIS Shapefiles</em>
+        <ul>
+          <li>
+            <p><a href="http://dms2203.cartodb.com/tables/ct10_tree_canopy/public">Download the joined Tree Canopy Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API</a></p>
+          </li>
+          <li>
+            <p><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><em>Data Dictionary</em></p>
+
+        <p>Coming soon.
+  <!--* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)--></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="#top">Top</a>		</p>
+
+<hr />
+
+<h2 id="a-namealcoholaalcohol-license-data"><a name="alcohol"></a>Alcohol License Data</h2>
+
+<hr />
+
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/alcohol_tract_legend_clip.png" width="35%" height="35%" alt="alcohol" /></center>
+
+<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/b5f847d8-ab27-11e4-8da3-0e9d821ea90d/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
+
+<hr />
+
+<p>This dataset represents count of Alcohol Licenses by NYC DCP Census Tract (2010) which BEH received via email 2013/04/21 from NY State Liquor Authority. </p>
+
+<ul>
+  <li>License Categories
+    <ul>
+      <li>1 = On Premise</li>
+      <li>2 = Off Premise</li>
+      <li>3 = Wholesale</li>
+      <li>4 = Pending</li>
+      <li>5 = Disabled</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Census Tract (2010)</strong></p>
+
+    <ul>
+      <li>
+        <p><em>Alcohol License Tables</em></p>
+
+        <ul>
+          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv">Download Alcohol License Data CSV</a></li>
+          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv">View Alcohol License Table in Browser</a></li>
+        </ul>
+      </li>
+      <li><em>GIS Shapefiles</em>
+        <ul>
+          <li>
+            <p><a href="https://dms2203.cartodb.com/tables/ct10_alcohol_licenses/public">Download the joined Alcohol License Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API</a></p>
+          </li>
+          <li>
+            <p><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><em>Data Dictionary</em></p>
+
+        <p>Coming soon.
+  <!--* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)--></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="#top">Top</a>		</p>
+
+<hr />
+
+<h2 id="a-nameacs0610aus-census-american-community-survey-data-2006-2010"><a name="acs0610"></a>US Census American Community Survey Data 2006-2010</h2>
+
+<hr />
+
+<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/mhhi_tract_legend_clip.png" width="35%" height="35%" alt="alcohol" /></center>
+
+<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/0a7e8122-ab38-11e4-9bff-0e853d047bba/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
+
+<hr />
+
+<p>This dataset represents US Census American Community Survey Data 2006-2010 by NYC DCP Census Tract (2010). </p>
+
+<ul>
+  <li>
+    <p><strong>Census Tract (2010)</strong></p>
+
+    <ul>
+      <li>
+        <p><em>US Census American Community Survey Data 2006-2010 Tables</em></p>
+
+        <ul>
+          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/acs_2006_10/ct10_acs_2006_2010.csv">Download US Census American Community Survey Data 2006-2010 CSV</a> </li>
+        </ul>
+      </li>
+      <li>
+        <p><em>GIS Shapefiles</em>
+  <!--* [Download the joined Alcohol License Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](https://dms2203.cartodb.com/tables/ct10_alcohol_licenses/public)--></p>
+
+        <ul>
+          <li><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> </li>
+        </ul>
+      </li>
+      <li>
+        <p><em>Data Dictionary</em></p>
+
+        <ul>
+          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/acs_2006_10/Codebook-Tracts2010-ACS-2006-10.pdf?raw=true">Download Data Dictionary</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="#top">Top</a>		</p>
+
+<hr />
+
+<h2 id="a-namecensusabeh-us-census-data-api-download-tool-beta-01"><a name="census"></a>BEH US Census Data API Download Tool (beta 0.1)</h2>
+
+<hr />
+
+<p><strong><a href="http://beh-gis.github.io/pages/census_api">Download US Census Data to JSON via the BEH Census Data API Download Tool</a></strong></p>
+
+<p>This tool is only available for the following Census Geography levels:</p>
+
+<ul>
+  <li>Census Tract</li>
+</ul>
+
+<p>This tool is only available for the following Census Variables:</p>
+
+<ul>
+  <li>Total Population (or estimate for ACS)</li>
+</ul>
+
+<p><strong>Note:</strong> This tool is currently in development so please <a href="mailto:dms2203@cumc.columbia.edu?Subject=BEH-GIS%20Census%20Data%20API%20Download%20Tool%20Bug%20Alert" target="_top">report bugs or issues.</a></p>
+
+<p>JSON File Format Resources:</p>
+
+<ul>
+  <li><a href="http://www.json.org/">JSON.org</a></li>
+  <li><a href="http://cran.r-project.org/web/packages/rjson/rjson.pdf">Using JSON in R</a></li>
+  <li><a href="https://docs.python.org/2/library/json.html">Using JSON in Python</a></li>
+</ul>
+
+<p><a href="#top">Top</a>	</p>
 
   </article>
 
@@ -239,7 +406,7 @@
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">Geographic Information Systems (GIS) Team Data Portal website for the Built Environment and Health (BEH) Research Group at Columbia University.
+        <p class="text">Geographic Information Systems (GIS) Data Portal for the Built Environment and Health (BEH) Research Group at Columbia University.
 </p>
       </div>
     </div>

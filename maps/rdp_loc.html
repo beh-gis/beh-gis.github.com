@@ -21,6 +21,7 @@
     <!-- include cartodb.js library -->
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
     <script>      // credit: http://html5doctor.com/finding-your-position-with-geolocation/
+    var map;
               function detectUserLocation(){
                 if (navigator.geolocation) {
                   var timeoutVal = 10 * 1000 * 1000;
@@ -69,7 +70,7 @@
             cartodb.log.log(e, pos, latlng, data);
           });
           // you can get the native map to work with it
-          var map = vis.getNativeMap();
+          map = vis.getNativeMap();
           // now, perform any operations you need
           // map.setZoom(3);
           // map.panTo([50.5, 30.5]);
@@ -87,7 +88,7 @@
           lat = position.coords.latitude;
           //updateQuery();
           map.setView(new L.LatLng(lat,lon), 18);
-          new L.CircleMarker([lat,lon],{radius: 4}).addTo(map);
+          new L.CircleMarker([lat,lon],{radius: 30}).addTo(map);
 }
       
 

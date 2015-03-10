@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RdP - Sampling Grid</title>
+    <title>RdP - Street Segment Questions</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
@@ -23,18 +23,18 @@
 
     <script>
       function main() {
-        cartodb.createVis('map', 'http://dms2203.cartodb.com/api/v2/viz/2d8a77e0-bea0-11e4-8479-0e018d66dc29/viz.json', {
+        cartodb.createVis('map', 'http://dms2203.cartodb.com/api/v2/viz/7fc9c4cc-c691-11e4-90fb-0e4fddd5de28/viz.json', {
             title: true,
             description: true,
             search: true,
             tiles_loader: true,
             center_lat: -22.9785,
             center_lon: -43.3373, 
-            zoom: 17,
+            zoom: 3,
             scrollwheel: false,
             search: false,
             shareable: false,
-            layer_selector: true,
+            layer_selector: false,
         })
         .done(function(vis, layers) {
           // layer 0 is the base layer, layer 1 is cartodb layer

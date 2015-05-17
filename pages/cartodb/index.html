@@ -74,6 +74,7 @@ layout: default
             shareable: false,
             layer_selector: false,
             zoomControl: true,
+            cartodb_logo: false,
         })
         .done(function(vis, layers) {
           // layer 0 is the base layer, layer 1 is cartodb layer
@@ -87,7 +88,7 @@ layout: default
           // now, perform any operations you need
           // map.setZoom(3);
           // map.panTo([50.5, 30.5]);
-          map.dragging.disable();
+          // map.dragging.disable();
 
         })
         .error(function(err) {

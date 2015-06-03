@@ -1,63 +1,127 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>RdP - SSO</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
-    <style>
-      html, body, #map {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-      }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
-  </head>
+  <title>Built Environment and Health</title>
+  <meta name="description" content="Geographic Information Systems (GIS) Data Portal for the Built Environment and Health (BEH) Research Group at Columbia University.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://beh-gis.github.io/pages/soc_epi/">
+  <link rel="alternate" type="application/rss+xml" title="Built Environment and Health" href="http://beh-gis.github.io/feed.xml" />
+</head>
+
+
   <body>
-    <div id="map"></div>
 
-    <!-- include cartodb.js library -->
-    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
+    <header class="site-header">
 
-    <script>
-      function main() {
-        cartodb.createVis('map', 'https://dms2203.cartodb.com/api/v2/viz/c7d30d14-0a07-11e5-acc0-0e9d821ea90d/viz.json', {
-            title: false,
-            description: true,
-            search: true,
-            tiles_loader: true,
-            center_lat: -22.9745,
-            center_lon: -43.3343, 
-            zoom: 16,
-            scrollwheel: false,
-            search: false,
-            shareable: false,
-            layer_selector: false,
-        })
-        .done(function(vis, layers) {
-          // layer 0 is the base layer, layer 1 is cartodb layer
-          // setInteraction is disabled by default
-          layers[1].setInteraction(true);
-          layers[1].on('featureOver', function(e, pos, latlng, data) {
-            cartodb.log.log(e, pos, latlng, data);
-          });
-          // you can get the native map to work with it
-          var map = vis.getNativeMap();
-          // now, perform any operations you need
-          // map.setZoom(3);
-          // map.panTo([50.5, 30.5]);
+  <div class="wrapper">
 
-        })
-        .error(function(err) {
-          console.log(err);
-        });
-      }
-      window.onload = main;
+    <a class="site-title" href="/">Built Environment and Health</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+          <a class="page-link" href="/data/">Data</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
 
 
+    <div class="page-content">
+      <div class="wrapper">
+        <h1>Social Epi Blogpost Map Embeds</h1>
 
-    </script>
+<h3>Standing Water Present</h3>
+<iframe src="http://beh-gis.github.io/pages/soc_epi/" frameborder=0 width='100%' height=600></iframe>
+
+<code> &lt;iframe src=&quot;http://beh-gis.github.io/pages/soc_epi/&quot; frameborder=0 width='100%' height=600&gt;&lt;/iframe&gt;   </code>
+
+</br>
+</br>
+
+<h3>Standing Water Present</h3>
+<iframe src="http://beh-gis.github.io/pages/soc_epi/" frameborder=0 width='100%' height=600></iframe>
+
+<code> &lt;iframe src=&quot;http://beh-gis.github.io/pages/soc_epi/&quot; frameborder=0 width='100%' height=600&gt;&lt;/iframe&gt;   </code>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">Built Environment and Health</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Built Environment and Health</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Geographic Information Systems (GIS) Data Portal for the Built Environment and Health (BEH) Research Group at Columbia University.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
   </body>
+
 </html>

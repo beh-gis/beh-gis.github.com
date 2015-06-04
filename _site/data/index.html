@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Data</title>
+  <title>Built Environment and Health</title>
   <meta name="description" content="Geographic Information Systems (GIS) Data Portal for the Built Environment and Health (BEH) Research Group at Columbia University.
 ">
 
@@ -60,7 +60,15 @@
           
         
           
+        
+          
+        
+          
           <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+        
           
         
           
@@ -77,320 +85,110 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="post">
+          <head>
+<!--     From http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h for dropbown -->    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--     From http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h for dropbown -->        
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
 
-  <header class="post-header">
-    <h1 class="post-title">Data</h1>
-  </header>
+      }
+      div#map {
+        width: 330pt; height: 400pt; float: right;
+      }
+      div#leftpanel{
+        width: 150pt; height: 340pt; float: left;
+      }
+    </style>
 
-  <article class="post-content">
-    <h4 id="a-nametopamenu"><a name="top"></a><em>Menu</em></h4>
-<ul>
-  <li><a href="#walk">Walkability</a></li>
-  <li><a href="#tree">Tree Canopy</a></li>
-  <li><a href="#alcohol">Alcohol Licensing</a></li>
-  <li><a href="#acs0610">US Census American Community Survey Data 2006-2010</a></li>
-  <li><a href="#census">US Census Data Download Tool</a>
-<!--* [FAQ]()--></li>
-</ul>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
+  </head>
+  <body>
+    <center><h1>NYC Census Tracts 2010</h1></center>
 
-<hr />
 
-<h2 id="a-namewalkawalkability-data"><a name="walk"></a>Walkability Data</h2>
+    <div id="leftpanel">
+      <p>Choose a variable to map:</p>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="walkability.html">Walkability</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="mhhi.html">Median Household Income</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="tree_canopy.html">Percent Tree Canopy</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="http://beh.columbia.edu/">About Us</a></li>
 
-<hr />
-
-<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/walkability_tract_legend_clip.png" width="35%" height="35%" alt="walkability" /></center>
-
-<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-
-<hr />
-
-<p>This dataset represents BEH’s Walkability Measure by NYC DCP Census Tract (2010).</p>
-
-<ul>
-  <li>
-    <p><strong>Census Tract (2010)</strong></p>
-
-    <ul>
-      <li>
-        <p><em>Walkability Tables</em></p>
-
-        <ul>
-          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/t10_walkability_recalc.csv">Download BEH Walkability CSV</a></li>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/data/t10_walkability_recalc.csv">View BEH Walkability Table in Browser</a></li>
+          
         </ul>
-      </li>
-      <li>
-        <p><em>GIS Shapefiles</em></p>
+      </div>
+    </br>
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
 
-        <ul>
-          <li>
-            <p><a href="https://dms2203.cartodb.com/tables/nyct2010_walkability">Download the joined Walkability Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API</a></p>
-          </li>
-          <li>
-            <p><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> Note: NYC DCP’s Tract file has 2,166 Tracts, our BEH dataset uses 2,164. The two missing tracts are water/piers. Drop them from the Tracts shapefile.</p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p><em>Data Dictionary</em></p>
 
-        <ul>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true">Download Data Dictionary</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Community District</strong></p>
 
-    <ul>
-      <li>
-        <p><em>Walkability Tables</em></p>
+    </div>
+    <div id="map"></div>
 
-        <ul>
-          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/comdist_gis_metrics_11dec2014.csv">Download BEH Walkability CSV</a></li>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/data/comdist_gis_metrics_11dec2014.csv">View BEH Walkability Table in Browser</a></li>
-        </ul>
-      </li>
-      <li>
-        <p><em>GIS Shapefiles</em></p>
+    <!-- include cartodb.js library -->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
 
-        <ul>
-          <li><a href="http://www.nyc.gov/html/dcp/download/bytes/nycd_14d.zip">NYC Department of City Planning Community Districts Shapefile</a></li>
-        </ul>
-      </li>
-      <li>
-        <p><em>Data Dictionary</em></p>
+    <script>
 
-        <ul>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/GIS-Codebook-CommunityDistricts-12dec2014.pdf?raw=true">Download Data Dictionary</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>UHF (42) (2009)</strong></p>
+      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/viz.json'
 
-    <ul>
-      <li>
-        <p><em>Walkability Tables</em></p>
+      function main() {
+        cartodb.createVis('map', vizID, {
+            title: false,
+            description: false,
+            search: false,
+            tiles_loader: true,
+            center_lat: 40.65,
+            center_lon: -73.99, 
+            zoom: 10,
+            scrollwheel: false,
+            search: false,
+            shareable: false,
+            layer_selector: false,
+            zoomControl: true,
+            cartodb_logo: false,
+        })
+        .done(function(vis, layers) {
+          // layer 0 is the base layer, layer 1 is cartodb layer
+          // setInteraction is disabled by default
+          layers[1].setInteraction(true);
+          layers[1].on('featureOver', function(e, pos, latlng, data) {
+            cartodb.log.log(e, pos, latlng, data);
+          });
+          // you can get the native map to work with it
+          var map = vis.getNativeMap();
+          // now, perform any operations you need
+          // map.setZoom(3);
+          // map.panTo([50.5, 30.5]);
+          // map.dragging.disable();
 
-        <ul>
-          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/walkability/data/uhf42_gis_metrics_11dec2014.csv">Download BEH Walkability CSV</a></li>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/data/uhf42_gis_metrics_11dec2014.csv">View BEH Walkability Table in Browser</a></li>
-        </ul>
-      </li>
-      <li>
-        <p><em>GIS Shapefiles</em></p>
+        })
+        .error(function(err) {
+          console.log(err);
+        });
+      }
+      window.onload = main;
 
-        <ul>
-          <li><a href="https://www1.nyc.gov/html/doh/downloads/zip/uhf42_dohmh_2009.zip">NYC DOHMH UHF 42 Shapefile</a></li>
-        </ul>
-      </li>
-      <li>
-        <p><em>Data Dictionary</em></p>
 
-        <ul>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/GIS-Codebook-UHF42-12dec2014.pdf?raw=true">Download Data Dictionary</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
 
-<p><a href="#top">Top</a>	</p>
-
-<hr />
-
-<h2 id="a-nametreeatree-canopy-data"><a name="tree"></a>Tree Canopy Data</h2>
-
-<hr />
-
-<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/tree_canopy_tract_legend_clip.png" width="35%" height="35%" alt="tree canopy" /></center>
-
-<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/8ea73f6c-ab1e-11e4-9f73-0e0c41326911/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-
-<hr />
-
-<p>This dataset represents the percent of the NYC DCP Census Tract (2010) covered by Tree Canopy. </p>
-
-<ul>
-  <li>
-    <p><strong>Census Tract (2010)</strong></p>
-
-    <ul>
-      <li>
-        <p><em>Tree Canopy Tables</em></p>
-
-        <ul>
-          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/tree_canopy/data/ct10_tree_canopy.csv">Download BEH Tree Canopy CSV</a></li>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/tree_canopy/data/ct10_tree_canopy.csv">View BEH Tree Canopy Table in Browser</a></li>
-        </ul>
-      </li>
-      <li><em>GIS Shapefiles</em>
-        <ul>
-          <li>
-            <p><a href="http://dms2203.cartodb.com/tables/ct10_tree_canopy/public">Download the joined Tree Canopy Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API</a></p>
-          </li>
-          <li>
-            <p><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p><em>Data Dictionary</em></p>
-
-        <p>Coming soon.
-  <!--* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)--></p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="#top">Top</a>		</p>
-
-<hr />
-
-<h2 id="a-namealcoholaalcohol-license-data"><a name="alcohol"></a>Alcohol License Data</h2>
-
-<hr />
-
-<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/alcohol_tract_legend_clip.png" width="35%" height="35%" alt="alcohol" /></center>
-
-<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/b5f847d8-ab27-11e4-8da3-0e9d821ea90d/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-
-<hr />
-
-<p>This dataset represents count of Alcohol Licenses by NYC DCP Census Tract (2010) which BEH received via email 2013/04/21 from NY State Liquor Authority. </p>
-
-<ul>
-  <li>License Categories
-    <ul>
-      <li>1 = On Premise</li>
-      <li>2 = Off Premise</li>
-      <li>3 = Wholesale</li>
-      <li>4 = Pending</li>
-      <li>5 = Disabled</li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Census Tract (2010)</strong></p>
-
-    <ul>
-      <li>
-        <p><em>Alcohol License Tables</em></p>
-
-        <ul>
-          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv">Download Alcohol License Data CSV</a></li>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/alcohol_licenses/data/ct10_alcohol_licenses.csv">View Alcohol License Table in Browser</a></li>
-        </ul>
-      </li>
-      <li><em>GIS Shapefiles</em>
-        <ul>
-          <li>
-            <p><a href="https://dms2203.cartodb.com/tables/ct10_alcohol_licenses/public">Download the joined Alcohol License Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API</a></p>
-          </li>
-          <li>
-            <p><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p><em>Data Dictionary</em></p>
-
-        <p>Coming soon.
-  <!--* [Download Data Dictionary](https://github.com/nygeog/beh_public/blob/master/data/walkability/docs/walkability-gis-codebook-2010-tracts-20150112.pdf?raw=true)--></p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="#top">Top</a>		</p>
-
-<hr />
-
-<h2 id="a-nameacs0610aus-census-american-community-survey-data-2006-2010"><a name="acs0610"></a>US Census American Community Survey Data 2006-2010</h2>
-
-<hr />
-
-<center><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/mhhi_tract_legend_clip.png" width="35%" height="35%" alt="alcohol" /></center>
-
-<iframe width="100%" height="520" frameborder="0" src="http://dms2203.cartodb.com/viz/0a7e8122-ab38-11e4-9bff-0e853d047bba/embed_map" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
-
-<hr />
-
-<p>This dataset represents US Census American Community Survey Data 2006-2010 by NYC DCP Census Tract (2010). </p>
-
-<ul>
-  <li>
-    <p><strong>Census Tract (2010)</strong></p>
-
-    <ul>
-      <li>
-        <p><em>US Census American Community Survey Data 2006-2010 Tables</em></p>
-
-        <ul>
-          <li><a href="https://raw.githubusercontent.com/nygeog/beh_public/master/data/acs_2006_10/ct10_acs_2006_2010.csv">Download US Census American Community Survey Data 2006-2010 CSV</a> </li>
-        </ul>
-      </li>
-      <li>
-        <p><em>GIS Shapefiles</em>
-  <!--* [Download the joined Alcohol License Data and the NYC 2010 Tracts in CartoDB as Shapefile, KML, SVG, GeoJSON or with API](https://dms2203.cartodb.com/tables/ct10_alcohol_licenses/public)--></p>
-
-        <ul>
-          <li><a href="http://www.nyc.gov/html/dcp/download/bytes/nyct2010_14d.zip">NYC Department of City Planning 2010 Census Tracts (Clipped to Shoreline) Shapefile</a> </li>
-        </ul>
-      </li>
-      <li>
-        <p><em>Data Dictionary</em></p>
-
-        <ul>
-          <li><a href="https://github.com/nygeog/beh_public/blob/master/data/acs_2006_10/Codebook-Tracts2010-ACS-2006-10.pdf?raw=true">Download Data Dictionary</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="#top">Top</a>		</p>
-
-<hr />
-
-<h2 id="a-namecensusabeh-us-census-data-api-download-tool-beta-01"><a name="census"></a>BEH US Census Data API Download Tool (beta 0.1)</h2>
-
-<hr />
-
-<p><strong><a href="http://beh-gis.github.io/pages/census_api">Download US Census Data to JSON via the BEH Census Data API Download Tool</a></strong></p>
-
-<p>This tool is only available for the following Census Geography levels:</p>
-
-<ul>
-  <li>Census Tract</li>
-</ul>
-
-<p>This tool is only available for the following Census Variables:</p>
-
-<ul>
-  <li>Total Population (or estimate for ACS)</li>
-</ul>
-
-<p><strong>Note:</strong> This tool is currently in development so please <a href="mailto:dms2203@cumc.columbia.edu?Subject=BEH-GIS%20Census%20Data%20API%20Download%20Tool%20Bug%20Alert" target="_top">report bugs or issues.</a></p>
-
-<p>JSON File Format Resources:</p>
-
-<ul>
-  <li><a href="http://www.json.org/">JSON.org</a></li>
-  <li><a href="http://cran.r-project.org/web/packages/rjson/rjson.pdf">Using JSON in R</a></li>
-  <li><a href="https://docs.python.org/2/library/json.html">Using JSON in Python</a></li>
-</ul>
-
-<p><a href="#top">Top</a>	</p>
-
-  </article>
-
-</div>
+    </script>
+  </body>
 
       </div>
     </div>

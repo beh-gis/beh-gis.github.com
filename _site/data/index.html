@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Built Environment and Health</title>
+  <title>Data</title>
   <meta name="description" content="Geographic Information Systems (GIS) Data Portal for the Built Environment and Health (BEH) Research Group at Columbia University.
 ">
 
@@ -40,13 +40,15 @@
           
         
           
+          <a class="page-link" href="/api/">API</a>
+          
+        
+          
+        
+          
+        
+          
           <a class="page-link" href="/data/">Data</a>
-          
-        
-          
-        
-          
-        
           
         
           
@@ -114,6 +116,7 @@
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
   </head>
   <body>
+
     <center><h1>NYC Census Tracts 2010</h1></center>
 
 
@@ -135,8 +138,6 @@
     </br>
       <p></p>
       <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
-
-
 
     </div>
     <div id="map"></div>

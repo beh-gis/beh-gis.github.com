@@ -114,11 +114,14 @@
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Percent Tree Canopy</a></li>
           <li role="presentation" class="divider"></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+
+          #CREATE HREF LINKS FOR EACH OF THESE PAGES 
+
         </ul>
       </div>
     </br>
       <p></p>
-      <button onclick="getElementById('demo').innerHTML=Date()">Export data as csv</button>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export data as csv</button>
 
 
 
@@ -129,8 +132,11 @@
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
 
     <script>
+
+      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/viz.json'
+
       function main() {
-        cartodb.createVis('map', 'https://dms2203.cartodb.com/api/v2/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/viz.json', {
+        cartodb.createVis('map', vizID, {
             title: false,
             description: false,
             search: false,

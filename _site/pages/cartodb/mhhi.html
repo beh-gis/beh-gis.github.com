@@ -11,7 +11,7 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://beh-gis.github.io/pages/cartodb/">
+  <link rel="canonical" href="http://beh-gis.github.io/pages/cartodb/mhhi.html">
   <link rel="alternate" type="application/rss+xml" title="Built Environment and Health" href="http://beh-gis.github.io/feed.xml" />
 </head>
 
@@ -126,7 +126,7 @@
       </div>
     </br>
       <p></p>
-      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export data as csv</button>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi.csv&format=csv&q=SELECT geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010'">Export data as csv</button>
 
 
 
@@ -138,7 +138,7 @@
 
     <script>
 
-      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/viz.json'
+      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/0a7e8122-ab38-11e4-9bff-0e853d047bba/viz.json'
 
       function main() {
         cartodb.createVis('map', vizID, {

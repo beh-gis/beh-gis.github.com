@@ -75,7 +75,7 @@ Send me an [email](mailto:daniel.martin.sheehan@gmail.com).
 <!--##<a name="teaching"></a>Teaching and GIS Training
 Contact the BEH GIS Group for training and teaching Geographic Information Systems (GIS) or see the [GIS course available at EPIC 2015](https://cuepisummer.org/course/geographic-information-systems). -->
 
----
+
 
 
 

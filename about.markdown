@@ -16,7 +16,7 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 ####<a name="top"></a>*Menu*
 * [About BEH](#info)
 * [BEH GIS Staff](#staff)
-* [Teaching and GIS Training](#teaching)
+<!--* [Teaching and GIS Training](#teaching)-->
 
 <!-- * [Publications](#pubs)
 * [Contact](#contact) -->
@@ -72,8 +72,8 @@ Send me an [email](mailto:daniel.martin.sheehan@gmail.com).
 
 
 
-##<a name="teaching"></a>Teaching and GIS Training
-Contact the BEH GIS Group for training and teaching Geographic Information Systems (GIS) or see the [GIS course available at EPIC 2015](https://cuepisummer.org/course/geographic-information-systems). 
+<!--##<a name="teaching"></a>Teaching and GIS Training
+Contact the BEH GIS Group for training and teaching Geographic Information Systems (GIS) or see the [GIS course available at EPIC 2015](https://cuepisummer.org/course/geographic-information-systems). -->
 
 ---
 

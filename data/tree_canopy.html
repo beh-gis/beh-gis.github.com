@@ -31,8 +31,9 @@ layout: default
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
   </head>
   <body>
-<p>
-      <p>Choose a unit of geography to map:</p>
+
+    <div id="leftpanel">
+      <p>Choose a unit of geography:</p>
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menuGeo" data-toggle="dropdown"><strong>Geography</strong>
         <span class="caret"></span></button>
@@ -42,11 +43,8 @@ layout: default
           <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Community District</strike></a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>ZCTA</strike></a></li>
         </ul>
-
-</p>
-
-    <div id="leftpanel">
-      <p>Choose a variable to map:</p>
+      </div>
+      <p>Choose a variable:</p>
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
         <span class="caret"></span></button>
@@ -75,9 +73,7 @@ layout: default
 </br>
 </br>
 </br>
-</br>
-</br>
-</br>
+
       <p></p>
       <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_treecanopy.csv&format=csv&q=SELECT geoid,cttreepct FROM ct10_tree_canopy'">Export percent tree canopy data as csv</button>
 
@@ -101,7 +97,7 @@ layout: default
             description: false,
             search: false,
             tiles_loader: true,
-            center_lat: 40.65,
+            center_lat: 40.77,
             center_lon: -73.99, 
             zoom: 10,
             scrollwheel: false,

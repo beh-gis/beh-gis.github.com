@@ -11,7 +11,7 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://beh-gis.github.io/dataR/tree_canopy.html">
+  <link rel="canonical" href="http://beh-gis.github.io/pages/cartodb_OLD/">
   <link rel="alternate" type="application/rss+xml" title="Built Environment and Health" href="http://beh-gis.github.io/feed.xml" />
 </head>
 
@@ -46,15 +46,15 @@
           
         
           
+        
+          
+        
+          
+        
+          
+        
+          
           <a class="page-link" href="/data/">Data</a>
-          
-        
-          
-        
-          
-        
-          
-        
           
         
           
@@ -108,7 +108,7 @@
 
       }
       div#map {
-        width: 330pt; height: 420pt; float: right;
+        width: 330pt; height: 400pt; float: right;
       }
       div#leftpanel{
         width: 150pt; height: 340pt; float: left;
@@ -119,19 +119,11 @@
   </head>
   <body>
 
+    <center><h1>NYC Census Tracts 2010</h1></center>
+
+
     <div id="leftpanel">
-      <p>Choose a unit of geography:</p>
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="menuGeo" data-toggle="dropdown"><strong>Geography</strong>
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Census Tract 2010</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Census Tract 2000</strike></a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Community District</strike></a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>ZCTA</strike></a></li>
-        </ul>
-      </div>
-      <p>Choose a variable:</p>
+      <p>Choose a variable to map:</p>
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
         <span class="caret"></span></button>
@@ -143,32 +135,11 @@
           <li role="presentation"><a role="menuitem" tabindex="-1" href="http://beh.columbia.edu/">About Us</a></li>
 
           
-
         </ul>
       </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+    </br>
       <p></p>
-      <button onclick="location.href='http://beh-gis.github.io/dictionary/walkability/ct2010/2014/12/31/walkability-ct2010.html'">Data dictionary</button>
-      
-      <p></p>
-      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_treecanopy.csv&format=csv&q=SELECT geoid,cttreepct FROM ct10_tree_canopy'">Export percent tree canopy data as csv</button>
-
-      <p></p>
-      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_treecanopy&format=shp&q=SELECT geoid,cttreepct FROM ct10_tree_canopy'">Export percent tree canopy data as shapefile</button>
-
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
 
     </div>
     <div id="map"></div>
@@ -178,7 +149,7 @@
 
     <script>
 
-      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/8ea73f6c-ab1e-11e4-9f73-0e0c41326911/viz.json'
+      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/viz.json'
 
       function main() {
         cartodb.createVis('map', vizID, {
@@ -186,7 +157,7 @@
             description: false,
             search: false,
             tiles_loader: true,
-            center_lat: 40.77,
+            center_lat: 40.65,
             center_lon: -73.99, 
             zoom: 10,
             scrollwheel: false,

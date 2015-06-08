@@ -46,15 +46,15 @@
           
         
           
+        
+          
+        
+          
+        
+          
+        
+          
           <a class="page-link" href="/data/">Data</a>
-          
-        
-          
-        
-          
-        
-          
-        
           
         
           
@@ -119,11 +119,19 @@
   </head>
   <body>
 
-    <center><h1>NYC Census Tracts 2010</h1></center>
-
-
     <div id="leftpanel">
-      <p>Choose a variable to map:</p>
+      <p>Choose a unit of geography:</p>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menuGeo" data-toggle="dropdown"><strong>Geography</strong>
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Census Tract 2010</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Census Tract 2000</strike></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Community District</strike></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>ZCTA</strike></a></li>
+        </ul>
+      </div>
+      <p>Choose a variable:</p>
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
         <span class="caret"></span></button>
@@ -137,9 +145,29 @@
           
         </ul>
       </div>
-    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+      <p></p>
+      <button onclick="location.href='http://beh-gis.github.io/dictionary/walkability/ct2010/2014/12/31/walkability-ct2010.html'">Data dictionary</button>
+      
       <p></p>
       <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
+
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk&format=shp&q=SELECT the_geom,geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as shapefile</button>
+
 
     </div>
     <div id="map"></div>
@@ -157,7 +185,7 @@
             description: false,
             search: false,
             tiles_loader: true,
-            center_lat: 40.65,
+            center_lat: 40.77,
             center_lon: -73.99, 
             zoom: 10,
             scrollwheel: false,

@@ -9,13 +9,13 @@ categories: dictionary walkability ct2010
 ######geoid
 Test text
 
-######t10_key
+#####t10_key
 
-######t10_km2
+####t10_km2
 
-######t10_lndkm2
+###t10_lndkm2
 
-######t10_cnt
+##t10_cnt
 
 ######t10_resdn1
 

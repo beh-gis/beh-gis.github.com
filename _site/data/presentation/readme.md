@@ -1,9 +1,5 @@
-#BEH-GIS Data Portal (0.2)
-
-
-
-
-![portal](img/portal.png)
+#BEH-GIS Data Portal
+![portal](img/run-thru.gif)
 
 
 

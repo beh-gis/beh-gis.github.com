@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Data</title>
+  <title>Built Environment and Health</title>
   <meta name="description" content="Geographic Information Systems (GIS) Data Portal for the Built Environment and Health (BEH) Research Group at Columbia University.
 ">
 
@@ -46,9 +46,11 @@
           
         
           
+          <a class="page-link" href="/data/">Data</a>
+          
         
           
-          <a class="page-link" href="/data/">Data</a>
+        
           
         
           
@@ -109,18 +111,30 @@
         width: 330pt; height: 400pt; float: right;
       }
       div#leftpanel{
-        width: 150pt; height: 340pt; float: left;
+        width: 130pt; height: 340pt; float: left;
       }
     </style>
 
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
   </head>
   <body>
+<p>
+      <p>Choose a unit of geography to map:</p>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menuGeo" data-toggle="dropdown"><strong>Geography</strong>
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Census Tract 2010</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Census Tract 2000</strike></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Community District</strike></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>ZCTA</strike></a></li>
+        </ul>
 
-    <center><h1>NYC Census Tracts 2010</h1></center>
+</p>
 
 
     <div id="leftpanel">
+      
       <p>Choose a variable to map:</p>
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
@@ -135,9 +149,30 @@
           
         </ul>
       </div>
-    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
       <p></p>
       <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
+
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk&format=shp&q=SELECT the_geom,geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as shapefile</button>
+
 
     </div>
     <div id="map"></div>
@@ -189,6 +224,8 @@
 
 
     </script>
+
+
   </body>
 
       </div>

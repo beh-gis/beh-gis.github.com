@@ -11,7 +11,7 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://beh-gis.github.io/data/mhhi.html">
+  <link rel="canonical" href="http://beh-gis.github.io/pages/mapsense/">
   <link rel="alternate" type="application/rss+xml" title="Built Environment and Health" href="http://beh-gis.github.io/feed.xml" />
 </head>
 
@@ -89,7 +89,15 @@
 
     <div class="page-content">
       <div class="wrapper">
-          <head>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/topojson.v1.min.js" charset="utf-8"></script>
+    <script src="https://developer.mapsense.co/mapsense.js" charset="utf-8"></script>
+    <link type="text/css"  href="https://developer.mapsense.co/mapsense.css" rel="stylesheet"/>
 <!--     From http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h for dropbown -->    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -99,6 +107,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+
     <style>
       html, body {
         height: 100%;
@@ -115,22 +124,11 @@
       }
     </style>
 
-    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
-  </head>
-  <body>
-<p>
-      <p>Choose a unit of geography to map:</p>
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="menuGeo" data-toggle="dropdown"><strong>Geography</strong>
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Census Tract 2010</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Census Tract 2000</strike></a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Community District</strike></a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>ZCTA</strike></a></li>
-        </ul>
+</head>
+<body>
 
-</p>
+
+<center><h1>NYC Mapsense D3 </h1></center>
 
     <div id="leftpanel">
       <p>Choose a variable to map:</p>
@@ -147,82 +145,47 @@
           
         </ul>
       </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+    </br>
       <p></p>
-      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi.csv&format=csv&q=SELECT geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010'">Export median household income data as csv</button>
-
-      <p></p>
-      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi&format=shp&q=SELECT the_geom,geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010'">Export median household income data as shapefile</button>
-
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
 
     </div>
+
     <div id="map"></div>
 
-    <!-- include cartodb.js library -->
-    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
+<script>
 
-    <script>
-
-      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/0a7e8122-ab38-11e4-9bff-0e853d047bba/viz.json'
-
-      function main() {
-        cartodb.createVis('map', vizID, {
-            title: false,
-            description: false,
-            search: false,
-            tiles_loader: true,
-            center_lat: 40.65,
-            center_lon: -73.99, 
-            zoom: 10,
-            scrollwheel: false,
-            search: false,
-            shareable: false,
-            layer_selector: false,
-            zoomControl: true,
-            cartodb_logo: false,
-        })
-        .done(function(vis, layers) {
-          // layer 0 is the base layer, layer 1 is cartodb layer
-          // setInteraction is disabled by default
-          layers[1].setInteraction(true);
-          layers[1].on('featureOver', function(e, pos, latlng, data) {
-            cartodb.log.log(e, pos, latlng, data);
-          });
-          // you can get the native map to work with it
-          var map = vis.getNativeMap();
-          // now, perform any operations you need
-          // map.setZoom(3);
-          // map.panTo([50.5, 30.5]);
-          // map.dragging.disable();
-
-        })
-        .error(function(err) {
-          console.log(err);
-        });
-      }
-      window.onload = main;
+var map = mapsense.map("#map") //tell it where to go 
+    .center({lon: -73.99, lat: 40.75}) //set a center   -73.99
+    .zoom(10) //set a zoom
+    //.zoomRange([5,20]); // if you want to restrict zoom levels
 
 
+    //tile url
+    var url = "https://{S}-api.mapsense.co/universes/mapsense.demographics/{Z}/{X}/{Y}.topojson?api-key=key-2d5eacd8b924489c8ed5e8418bd883bc"; //&where=layer=='county'&dz=-2";
+    //create a coloring function
+    var colorRamp = d3.scale.linear()
+        .domain([0,.15])
+        .range(['rgb(247,251,255)', 'rgb(8,48,107)'])
 
-    </script>
-  </body>
+    var layer = mapsense.topoJson() //init a topojson layer
+        .url(mapsense.url(url).hosts(['a', 'b', 'c', 'd'])) //tell it where to look
+        .clip(true)
+        .selection(
+            function(d){
+                d.attr("class", "mapFeatures") //use a d3 selection to class each feature 
+                .style("fill", function(feature){ //color each feature by its unemployment rate
+                    return colorRamp(feature.properties.unemployment)
+                })
+            }
+        );
 
+    map.add(layer); //add the topojson layer to your map
+
+
+</script>
+</body>
+</html>
       </div>
     </div>
 

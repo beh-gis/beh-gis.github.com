@@ -31,8 +31,19 @@ layout: default
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
   </head>
   <body>
-    <center><h1>NYC Census Tracts 2010</h1></center>
+<p>
+      <p>Choose a unit of geography to map:</p>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menuGeo" data-toggle="dropdown"><strong>Geography</strong>
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Census Tract 2010</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Census Tract 2000</strike></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>Community District</strike></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html"><strike>ZCTA</strike></a></li>
+        </ul>
 
+</p>
 
     <div id="leftpanel">
       <p>Choose a variable to map:</p>
@@ -50,10 +61,28 @@ layout: default
 
         </ul>
       </div>
-    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
       <p></p>
       <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_treecanopy.csv&format=csv&q=SELECT geoid,cttreepct FROM ct10_tree_canopy'">Export percent tree canopy data as csv</button>
 
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_treecanopy&format=shp&q=SELECT geoid,cttreepct FROM ct10_tree_canopy'">Export percent tree canopy data as shapefile</button>
 
 
     </div>

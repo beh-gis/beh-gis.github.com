@@ -1,0 +1,102 @@
+---
+layout: default
+
+---
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/topojson.v1.min.js" charset="utf-8"></script>
+    <script src="https://developer.mapsense.co/mapsense.js" charset="utf-8"></script>
+    <link type="text/css"  href="https://developer.mapsense.co/mapsense.css" rel="stylesheet"/>
+<!--     From http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h for dropbown -->    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--     From http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_comp_dropdown-menu&stacked=h for dropbown -->        
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+      }
+      div#map {
+        width: 330pt; height: 400pt; float: right;
+      }
+      div#leftpanel{
+        width: 150pt; height: 340pt; float: left;
+      }
+    </style>
+
+</head>
+<body>
+
+
+<center><h1>NYC Mapsense D3 </h1></center>
+
+    <div id="leftpanel">
+      <p>Choose a variable to map:</p>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="walkability.html">Walkability</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="mhhi.html">Median Household Income</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="tree_canopy.html">Percent Tree Canopy</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="http://beh.columbia.edu/">About Us</a></li>
+
+          
+        </ul>
+      </div>
+    </br>
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
+
+    </div>
+
+    <div id="map"></div>
+
+<script>
+
+var map = mapsense.map("#map") //tell it where to go 
+    .center({lon: -73.99, lat: 40.75}) //set a center   -73.99
+    .zoom(10) //set a zoom
+    //.zoomRange([5,20]); // if you want to restrict zoom levels
+
+
+    //tile url
+    var url = "https://{S}-api.mapsense.co/universes/mapsense.demographics/{Z}/{X}/{Y}.topojson?api-key=key-2d5eacd8b924489c8ed5e8418bd883bc"; //&where=layer=='county'&dz=-2";
+    //create a coloring function
+    var colorRamp = d3.scale.linear()
+        .domain([0,.15])
+        .range(['rgb(247,251,255)', 'rgb(8,48,107)'])
+
+    var layer = mapsense.topoJson() //init a topojson layer
+        .url(mapsense.url(url).hosts(['a', 'b', 'c', 'd'])) //tell it where to look
+        .clip(true)
+        .selection(
+            function(d){
+                d.attr("class", "mapFeatures") //use a d3 selection to class each feature 
+                .style("fill", function(feature){ //color each feature by its unemployment rate
+                    return colorRamp(feature.properties.unemployment)
+                })
+            }
+        );
+
+    map.add(layer); //add the topojson layer to your map
+
+
+</script>
+</body>
+</html>

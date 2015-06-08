@@ -6,8 +6,8 @@
 </description>
     <link>http://beh-gis.github.io/</link>
     <atom:link href="http://beh-gis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jun 2015 14:43:38 -0400</pubDate>
-    <lastBuildDate>Mon, 08 Jun 2015 14:43:38 -0400</lastBuildDate>
+    <pubDate>Mon, 08 Jun 2015 14:45:33 -0400</pubDate>
+    <lastBuildDate>Mon, 08 Jun 2015 14:45:33 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -40,7 +40,8 @@
     
       <item>
         <title>Walkability - Census Tract 2010</title>
-        <description>&lt;h3 id=&quot;variables&quot;&gt;Variables&lt;/h3&gt;
+        <description>&lt;h1 id=&quot;variables&quot;&gt;Variables&lt;/h1&gt;
+&lt;hr /&gt;
 
 &lt;h4 id=&quot;geoid&quot;&gt;geoid&lt;/h4&gt;
 &lt;p&gt;Unique 11-digit US 2010 Census Tract ID.&lt;/p&gt;
@@ -55,23 +56,23 @@
 &lt;h4 id=&quot;t10cnt&quot;&gt;t10_cnt&lt;/h4&gt;
 &lt;p&gt;Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.&lt;/p&gt;
 
-&lt;h6 id=&quot;t10resdn1&quot;&gt;t10_resdn1&lt;/h6&gt;
+&lt;h4 id=&quot;t10resdn1&quot;&gt;t10_resdn1&lt;/h4&gt;
 
-&lt;h6 id=&quot;t10intden&quot;&gt;t10_intden&lt;/h6&gt;
+&lt;h4 id=&quot;t10intden&quot;&gt;t10_intden&lt;/h4&gt;
 
-&lt;h6 id=&quot;t10entrpy&quot;&gt;t10_entrpy&lt;/h6&gt;
+&lt;h4 id=&quot;t10entrpy&quot;&gt;t10_entrpy&lt;/h4&gt;
 
-&lt;h6 id=&quot;t10rtlfar&quot;&gt;t10_rtlfar&lt;/h6&gt;
+&lt;h4 id=&quot;t10rtlfar&quot;&gt;t10_rtlfar&lt;/h4&gt;
 
-&lt;h6 id=&quot;t10sub07d&quot;&gt;t10_sub07d&lt;/h6&gt;
+&lt;h4 id=&quot;t10sub07d&quot;&gt;t10_sub07d&lt;/h4&gt;
 
-&lt;h6 id=&quot;t10walk&quot;&gt;t10_walk&lt;/h6&gt;
+&lt;h4 id=&quot;t10walk&quot;&gt;t10_walk&lt;/h4&gt;
 &lt;p&gt;BEH Walkability Scale.&lt;/p&gt;
 
-&lt;h6 id=&quot;t10walkc&quot;&gt;t10_walk_c&lt;/h6&gt;
+&lt;h4 id=&quot;t10walkc&quot;&gt;t10_walk_c&lt;/h4&gt;
 &lt;p&gt;BEH Walkability Scale C.&lt;/p&gt;
 
-&lt;h3 id=&quot;walkability-index-scale&quot;&gt;Walkability Index Scale&lt;/h3&gt;
+&lt;h1 id=&quot;walkability-index-scale&quot;&gt;Walkability Index Scale&lt;/h1&gt;
 &lt;p&gt;A number of researchers have constructed walkability indices which summarize built environment features believed to promote walking. Although specification details vary, these indices typically include measures of population density, land use, and street network. Our walkability measure was adapted from that employed in recent papers by Frank and colleagues (2005 and 2006), which includes four components: residential population density (density of population per total residential land area), intersection density, an entropy measure of land use based on the distribution of building floor area among six land use types (education, entertainment, single-family residential, multi-family residential, retail, and office), and the retail floor area ratio, or the ratio of retail building floor area to retail land area. All of the Frank components were z-scored and summed, with intersection density receiving a double weight for the Frank Scale, but not for our scale. Our “BEH walkability scale” is documented in a paper by Neckerman and colleagues (2009). &lt;/p&gt;
 
 &lt;p&gt;Frank et al. Linking objectively measured physical activity with objectively measured urban form: findings from SMARTRAQ. American Journal of Preventive Medicine. 2005;28(2 Suppl 2):117-125.&lt;/p&gt;
@@ -80,7 +81,7 @@
 
 &lt;p&gt;Neckerman et al. Disparities in urban neighborhood conditions: Evidence from GIS measures and field observation in New York City. Journal of Public Health Policy. 2009;1(1 Suppl): S264-S285.&lt;/p&gt;
 
-&lt;h3 id=&quot;walkability-index-scales-city-wide-buffers&quot;&gt;Walkability Index Scales: City-Wide Buffers&lt;/h3&gt;
+&lt;h1 id=&quot;walkability-index-scales-city-wide-buffers&quot;&gt;Walkability Index Scales: City-Wide Buffers&lt;/h1&gt;
 &lt;p&gt;As an alternative to creating a ‘neighborhood walkability index scale’ based solely on the z-scored components within buffers specific to a study cohort, the BEH Working Group has developed a walkability index scale that considers the z-scored components across New York City as a whole.&lt;/p&gt;
 
 &lt;p&gt;The issue with creating a walkability index scale using buffer definitions specific to a study cohort is that the cohort may be spatially biased or clustered in a particular neighborhood(s) or parts of the City (e.g., northern Manhattan or the south Bronx). This could dramatically influence the range of z-scored components, and thus not provide a representative scale of walkability for that cohort compared to the walkability of the rest of the City.&lt;/p&gt;

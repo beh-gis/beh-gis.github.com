@@ -11,7 +11,7 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://beh-gis.github.io/data/tree_canopy.html">
+  <link rel="canonical" href="http://beh-gis.github.io/dataR/mhhi.html">
   <link rel="alternate" type="application/rss+xml" title="Built Environment and Health" href="http://beh-gis.github.io/feed.xml" />
 </head>
 
@@ -108,7 +108,7 @@
 
       }
       div#map {
-        width: 330pt; height: 420pt; float: right;
+        width: 330pt; height: 400pt; float: right;
       }
       div#leftpanel{
         width: 150pt; height: 340pt; float: left;
@@ -143,7 +143,6 @@
           <li role="presentation"><a role="menuitem" tabindex="-1" href="http://beh.columbia.edu/">About Us</a></li>
 
           
-
         </ul>
       </div>
 </br>
@@ -164,10 +163,10 @@
       <button onclick="location.href='http://beh-gis.github.io/dictionary/walkability/ct2010/2014/12/31/walkability-ct2010.html'">Data dictionary</button>
       
       <p></p>
-      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_treecanopy.csv&format=csv&q=SELECT geoid,cttreepct FROM ct10_tree_canopy'">Export percent tree canopy data as csv</button>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi.csv&format=csv&q=SELECT geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010'">Export median household income data as csv</button>
 
       <p></p>
-      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_treecanopy&format=shp&q=SELECT geoid,cttreepct FROM ct10_tree_canopy'">Export percent tree canopy data as shapefile</button>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi&format=shp&q=SELECT the_geom,geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010'">Export median household income data as shapefile</button>
 
 
     </div>
@@ -178,7 +177,7 @@
 
     <script>
 
-      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/8ea73f6c-ab1e-11e4-9f73-0e0c41326911/viz.json'
+      var vizID = 'https://dms2203.cartodb.com/api/v2/viz/0a7e8122-ab38-11e4-9bff-0e853d047bba/viz.json'
 
       function main() {
         cartodb.createVis('map', vizID, {

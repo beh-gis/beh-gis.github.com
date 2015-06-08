@@ -12,6 +12,8 @@
 * Choose Variable to map
 * Export as Table
 * Export as Shapefile 
+* Link to Data Dictionary (in Markdown, rendered as html)
+
 
 
 ##CartoDB

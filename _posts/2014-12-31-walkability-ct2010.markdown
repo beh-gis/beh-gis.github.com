@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Walkability - Census Tract 2010"
-categories: dictionary walkability ct2010
+categories: dictionary ct2010
 ---
 
 #Variables

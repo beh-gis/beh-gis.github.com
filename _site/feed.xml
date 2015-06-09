@@ -6,8 +6,8 @@
 </description>
     <link>http://beh-gis.github.io/</link>
     <atom:link href="http://beh-gis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 09 Jun 2015 14:53:31 -0400</pubDate>
-    <lastBuildDate>Tue, 09 Jun 2015 14:53:31 -0400</lastBuildDate>
+    <pubDate>Tue, 09 Jun 2015 16:50:33 -0400</pubDate>
+    <lastBuildDate>Tue, 09 Jun 2015 16:50:33 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -150,6 +150,27 @@ b1_n – The total number of land uses represented (between 1 and 5)&lt;/p&gt;
         <category>dictionary</category>
         
         <category>walkability</category>
+        
+        <category>ct2010</category>
+        
+      </item>
+    
+      <item>
+        <title>All Variables - Census Tract 2010</title>
+        <description>&lt;p&gt;local link
+http://localhost:4000/dictionary/all_vars/ct2010/2014/12/31/all-variables-ct2010.html&lt;/p&gt;
+
+&lt;p&gt;web link
+http://beh-gis.github.io/dictionary/all_vars/ct2010/2014/12/31/all-variables-ct2010.html&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 Dec 2014 00:00:00 -0500</pubDate>
+        <link>http://beh-gis.github.io/dictionary/all_vars/ct2010/2014/12/31/all-variables-ct2010.html</link>
+        <guid isPermaLink="true">http://beh-gis.github.io/dictionary/all_vars/ct2010/2014/12/31/all-variables-ct2010.html</guid>
+        
+        
+        <category>dictionary</category>
+        
+        <category>all_vars</category>
         
         <category>ct2010</category>
         

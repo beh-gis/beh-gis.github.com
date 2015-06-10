@@ -11,121 +11,9 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <style>
 
-    #leftpanel{
-        position: absolute; top: 25px; left: 45px; width: 150pt; height: 340pt; float: left; background: transparent;
-      }
-
-    html, body {width:100%; height:100%; padding: 0; margin: 0;}
-    
-    #map { width: 100%; height:100%; background: white;}
-
-/*    #geography { position: absolute; top: 50px; left: 55px; height: 400px; }
-    #variables { position: absolute; top: 10px; left: 55px; height: 40px; }*/
-
-    #exports { position: absolute; bottom: 35px; right: 55px; height: 120px; text-align: right;}   
-    /*
-    #menu { position: absolute; top: 5px; left: 5px; width: 140px; height:120px; background: transparent; z-index:10;}
-    #menu a { 
-      margin: 15px 10px 0 0;
-      float: right;
-      vertical-align: baseline;
-      width: 70px;
-      padding: 10px;
-      text-align: center;
-      font: bold 11px "Helvetica",Arial;
-      line-height: normal;
-      color: #555;
-      border-radius: 4px;
-      border: 1px solid #777777;
-      background: #ffffff;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    #menu a.selected,
-    #menu a:hover { 
-      color: #F84F40;
-  
-    */
-  </style>
-
-  <script>
-    var map;
-        function init(){
-      // initiate leaflet map
-      map = new L.Map('map', { 
-        center: [40.705,-73.94], 
-        zoom: 11
-      })
-
-      // L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
-      //   attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-      // }).addTo(map);
-
-      var layerUrl = 'http://documentation.cartodb.com/api/v2/viz/9af23dd8-ea10-11e2-b5ac-5404a6a683d5/viz.json';
-
-      var layerUrl = 'https://dms2203.cartodb.com/api/v2/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/viz.json';
-
-
-      var sublayers = [];
-
-      cartodb.createLayer(map, layerUrl)
-      .addTo(map)
-      .on('done', function(layer) {
-        // change the query for the first layer
-        var subLayerOptions = {
-          //sql: "SELECT * FROM ne_10m_populated_places_simple",
-          //cartocss: "#ne_10m_populated_places_simple{marker-fill: #F84F40; marker-width: 8; marker-line-color: white; marker-line-width: 2; marker-clip: false; marker-allow-overlap: true;}"
-        }
-
-        var sublayer = layer.getSubLayer(0);
-
-        sublayer.set(subLayerOptions);
-
-        sublayers.push(sublayer);
-      }).on('error', function() {
-        //log the error
-      });
-
-      //we define the queries that will be performed when we click on the buttons, by modifying the SQL of our layer
-      var LayerActions = {
-        all: function(){
-          sublayers[0].setSQL("SELECT * FROM nyct2010_walkability");
-          return true;
-        },
-        capitals: function(){
-          sublayers[0].setSQL("SELECT * FROM nyct2010_walkability WHERE boroname = 'Staten Island'");
-          return true;
-        },
-        megacities: function() {
-          layerUrl = 'http://documentation.cartodb.com/api/v2/viz/9af23dd8-ea10-11e2-b5ac-5404a6a683d5/viz.json';
-          sublayers[0].set({
-            sql: "SELECT * FROM ne_10m_populated_places_simple WHERE megacity = 1",
-            //as it is said, you can also add some CartoCSS code to make your points look like you want for the different queries
-           // cartocss: "#ne_10m_populated_places_simple{ marker-fill: black; }"
-          });
-          return true;
-        },
-        test: function() {
-          sublayers[0].set({
-            sql: "SELECT * FROM ne_10m_populated_places_simple WHERE megacity = 0",
-            //as it is said, you can also add some CartoCSS code to make your points look like you want for the different queries
-           // cartocss: "#ne_10m_populated_places_simple{ marker-fill: black; }"
-          });
-          return true;
-        }
-
-      }
-
-      $('.button').click(function() {
-        $('.button').removeClass('selected');
-        $(this).addClass('selected');
-        //this gets the id of the different buttons and calls to LayerActions which responds according to the selected id
-        LayerActions[$(this).attr('id')]();
-      });
-    }
-  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body onload="init()">
@@ -133,6 +21,10 @@
   <div id="leftpanel">
 
     <div class="container">  
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="http://beh-gis.github.io" class="button all">Home</a>
+        </button>
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="http://localhost:4000/data/working/cartodb" class="button all">Reset</a>
+        </button>
 
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Geography
@@ -141,15 +33,16 @@
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Census Tracts 2010</a></li>
         </ul>
       </div>
-      </br>
+      <!-- </br> -->
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
         <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Walkability</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#tree">Tree Canopy</a></li>
           <li role="presentation"><a href="#all" id="all" class="button all">All</a></li>
           <li role="presentation"><a href="#capitals" id="capitals" class="button capitals">Staten Island</a></li>
+          <li role="presentation"><a href="#treeCanopy" id="treeCanopy" class="button treeCanopy">Tree Canopy</a></li>
+          <li role="presentation"><a href="#walkability" id="walkability" class="button walkability">Walkability</a></li>
+          <li role="presentation"><a href="#mhhi" id="mhhi" class="button mhhi">Median Household Income</a></li>
         </ul>
       </div>
 
@@ -157,8 +50,7 @@
   
   </div>
 
-
-    <div id='exports'>
+  <div id='exports'>
       <p></p>
       <button onclick="location.href='http://beh-gis.github.io/dictionary/ct2010/2014/12/31/walkability-ct2010.html'">Data dictionary</button>
       
@@ -167,9 +59,7 @@
 
       <p></p>
       <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk&format=shp&q=SELECT the_geom,geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as shapefile</button>
-    </div>
+  </div>
 
-
-  
 </body>
 </html>

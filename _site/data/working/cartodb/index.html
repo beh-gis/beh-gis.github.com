@@ -9,8 +9,10 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <style>
     html, body {width:100%; height:100%; padding: 0; margin: 0;}
-    #map { width: 100%; height:100%; background: black;}
-    #menu { position: absolute; top: 5px; left: 5px; height: 120px; }
+    #map { width: 100%; height:100%; background: white;}
+    #geography { position: absolute; top: 10px; left: 55px; height: 120px; }
+    #variables { position: absolute; top: 50px; left: 55px; height: 120px; }
+    #exports { position: absolute; bottom: 35px; right: 55px; height: 120px; text-align: right;}   
     /*
     #menu { position: absolute; top: 5px; left: 5px; width: 140px; height:120px; background: transparent; z-index:10;}
     #menu a { 
@@ -41,13 +43,13 @@
         function init(){
       // initiate leaflet map
       map = new L.Map('map', { 
-        center: [40.77,-73.99], 
-        zoom: 10
+        center: [40.705,-73.94], 
+        zoom: 11
       })
 
-      L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
-        attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-      }).addTo(map);
+      // L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
+      //   attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+      // }).addTo(map);
 
       var layerUrl = 'http://documentation.cartodb.com/api/v2/viz/9af23dd8-ea10-11e2-b5ac-5404a6a683d5/viz.json';
 
@@ -116,7 +118,17 @@
 
 <body onload="init()">
   <div id='map'></div>
-  <div id='menu'>
+  <div id='geography'>
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Geography
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li><a href="#megacities" id="megacities" class="button megacities">MEGACITIES</a></li>
+      <li><a href="#capitals" id="capitals" class="button capitals">Staten Island</a></li>
+      <li><a href="#all" id="all" class="button all">ALL CITIES</a></li>
+      <li><a href="#test" id="test" class="button all">TEST</a></li>
+    </ul>
+    </div>
+  <div id='variables'>
     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
     <span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
@@ -125,6 +137,20 @@
       <li><a href="#all" id="all" class="button all">ALL CITIES</a></li>
       <li><a href="#test" id="test" class="button all">TEST</a></li>
     </ul>
-  </div>
+    </div>
+
+    <div id='exports'>
+      <p></p>
+      <button onclick="location.href='http://beh-gis.github.io/dictionary/ct2010/2014/12/31/walkability-ct2010.html'">Data dictionary</button>
+      
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
+
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk&format=shp&q=SELECT the_geom,geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as shapefile</button>
+    </div>
+
+
+  
 </body>
 </html>

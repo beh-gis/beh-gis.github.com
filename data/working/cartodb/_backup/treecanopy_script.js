@@ -8,8 +8,8 @@ var map;
   // L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
   //   attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
   // }).addTo(map);
-  var walkUrl = 'https://dms2203.cartodb.com/api/v2/viz/a7e9cb92-9b52-11e4-b578-0e9d821ea90d/viz.json';
-  var layerUrl = walkUrl;
+  var treeVizID = 'https://dms2203.cartodb.com/api/v2/viz/8ea73f6c-ab1e-11e4-9f73-0e0c41326911/viz.json';
+  var layerUrl = treeVizID;
 
   var sublayers = [];
 

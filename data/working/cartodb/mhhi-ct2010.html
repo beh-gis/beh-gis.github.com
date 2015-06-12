@@ -13,7 +13,7 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     
       <link rel="stylesheet" href="style.css">   <!-- LOCAL FILE -->
-      <script src="index_script.js"></script>   <!-- LOCAL FILE -->
+      <script src="mhhi-ct2010_script.js"></script>   <!-- LOCAL FILE -->
     </head>
     
     <body onload="init()">
@@ -50,11 +50,11 @@
       <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
       <div id='exports'>
           <p></p>
-          <button onclick='location.href="http://beh-gis.github.io/data/dictionary/walkability-ct2010.html"'>Walkability Data dictionary</button>
+          <button onclick='location.href="http://beh-gis.github.io/data/dictionary/mhhi-ct2010.html"'>Median Household Income Data dictionary</button>
           <p></p>
-          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability"'>Export Walkability data as csv</button>
+          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi.csv&format=csv&q=SELECT geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010"'>Export Median Household Income data as csv</button>
           <p></p>
-          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk&format=shp&q=SELECT the_geom,geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability"'>Export Walkability data as shapefile</button>
+          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi&format=shp&q=SELECT the_geom,geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010"'>Export Median Household Income data as shapefile</button>
       </div>
     </body>
     </html>

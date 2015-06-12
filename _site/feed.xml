@@ -6,8 +6,8 @@
 </description>
     <link>http://beh-gis.github.io/</link>
     <atom:link href="http://beh-gis.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Jun 2015 08:08:44 -0400</pubDate>
-    <lastBuildDate>Fri, 12 Jun 2015 08:08:44 -0400</lastBuildDate>
+    <pubDate>Fri, 12 Jun 2015 08:32:33 -0400</pubDate>
+    <lastBuildDate>Fri, 12 Jun 2015 08:32:33 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -35,140 +35,6 @@
         <category>jekyll</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Walkability - Census Tract 2010</title>
-        <description>&lt;h1 id=&quot;variables&quot;&gt;Variables&lt;/h1&gt;
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;geoid&quot;&gt;geoid&lt;/h4&gt;
-&lt;p&gt;Unique 11-digit US 2010 Census Tract ID.&lt;/p&gt;
-
-&lt;h4 id=&quot;t10key&quot;&gt;t10_key&lt;/h4&gt;
-&lt;p&gt;Unique 11-digit US 2010 Census Tract ID.&lt;/p&gt;
-
-&lt;h4 id=&quot;t10km2&quot;&gt;t10_km2&lt;/h4&gt;
-
-&lt;h5 id=&quot;t10lndkm2&quot;&gt;t10_lndkm2&lt;/h5&gt;
-
-&lt;h4 id=&quot;t10cnt&quot;&gt;t10_cnt&lt;/h4&gt;
-&lt;p&gt;Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.&lt;/p&gt;
-
-&lt;h4 id=&quot;t10resdn1&quot;&gt;t10_resdn1&lt;/h4&gt;
-
-&lt;h4 id=&quot;t10intden&quot;&gt;t10_intden&lt;/h4&gt;
-
-&lt;h4 id=&quot;t10entrpy&quot;&gt;t10_entrpy&lt;/h4&gt;
-
-&lt;h4 id=&quot;t10rtlfar&quot;&gt;t10_rtlfar&lt;/h4&gt;
-
-&lt;h4 id=&quot;t10sub07d&quot;&gt;t10_sub07d&lt;/h4&gt;
-
-&lt;h4 id=&quot;t10walk&quot;&gt;t10_walk&lt;/h4&gt;
-&lt;p&gt;BEH Walkability Scale.&lt;/p&gt;
-
-&lt;h4 id=&quot;t10walkc&quot;&gt;t10_walk_c&lt;/h4&gt;
-&lt;p&gt;BEH Walkability Scale C.&lt;/p&gt;
-
-&lt;h1 id=&quot;walkability-index-scale&quot;&gt;Walkability Index Scale&lt;/h1&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;A number of researchers have constructed walkability indices which summarize built environment features believed to promote walking. Although specification details vary, these indices typically include measures of population density, land use, and street network. Our walkability measure was adapted from that employed in recent papers by Frank and colleagues (2005 and 2006), which includes four components: residential population density (density of population per total residential land area), intersection density, an entropy measure of land use based on the distribution of building floor area among six land use types (education, entertainment, single-family residential, multi-family residential, retail, and office), and the retail floor area ratio, or the ratio of retail building floor area to retail land area. All of the Frank components were z-scored and summed, with intersection density receiving a double weight for the Frank Scale, but not for our scale. Our “BEH walkability scale” is documented in a paper by Neckerman and colleagues (2009). &lt;/p&gt;
-
-&lt;p&gt;Frank et al. Linking objectively measured physical activity with objectively measured urban form: findings from SMARTRAQ. American Journal of Preventive Medicine. 2005;28(2 Suppl 2):117-125.&lt;/p&gt;
-
-&lt;p&gt;Frank et al. Many Pathways from Land Use to Health: Associations between Neighborhood Walkability and Active Transportation, Body Mass Index, and Air Quality. Journal of the American Planning Association. 2006;72(1):75-87.&lt;/p&gt;
-
-&lt;p&gt;Neckerman et al. Disparities in urban neighborhood conditions: Evidence from GIS measures and field observation in New York City. Journal of Public Health Policy. 2009;1(1 Suppl): S264-S285.&lt;/p&gt;
-
-&lt;h1 id=&quot;walkability-index-scales-city-wide-buffers&quot;&gt;Walkability Index Scales: City-Wide Buffers&lt;/h1&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;As an alternative to creating a ‘neighborhood walkability index scale’ based solely on the z-scored components within buffers specific to a study cohort, the BEH Working Group has developed a walkability index scale that considers the z-scored components across New York City as a whole.&lt;/p&gt;
-
-&lt;p&gt;The issue with creating a walkability index scale using buffer definitions specific to a study cohort is that the cohort may be spatially biased or clustered in a particular neighborhood(s) or parts of the City (e.g., northern Manhattan or the south Bronx). This could dramatically influence the range of z-scored components, and thus not provide a representative scale of walkability for that cohort compared to the walkability of the rest of the City.&lt;/p&gt;
-
-&lt;p&gt;The BEH Working Group has tackled this problem by buffering 2010 Census Block centroids (n=38,526) by 1-km radial buffers and then deriving the walkability components that are later z-scored. In doing so, a more appropriate apples-to-apple comparison of walkability can be made between, say, an address in Staten Island to the rest of the City as whole rather than a cluster of addresses all within a similar built environment.&lt;/p&gt;
-
-&lt;p&gt;New York City-wide Walkability Index Scale using Census Blocks&lt;/p&gt;
-
-&lt;p&gt;In order to assign each 2010 Census Tract with the city-wide walkability index scale, the walkability index scale values for each Block centroid were simply averaged up to the Tract level. The following variables are the result of that process:&lt;/p&gt;
-
-&lt;p&gt;t10_key – Unique 11-digit US 2010 Census Tract ID.&lt;/p&gt;
-
-&lt;p&gt;t10_km2 – Total area of US 2010 Census Tract geography in km2.&lt;/p&gt;
-
-&lt;p&gt;t10_lndkm2 – Total land area of US 2010 Census Tract geography in km2 (inland water bodies removed).&lt;/p&gt;
-
-&lt;p&gt;t10_cnt – Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.&lt;/p&gt;
-
-&lt;p&gt;t10_walk – BEH Walkability Scale.&lt;/p&gt;
-
-&lt;p&gt; 
-Walkability Index Scale Variables
-To date, BEH has created and used two different versions of the Walkability Index Scales, which we refer to here as the “Frank et al. 2006” and BEH scales. The “Frank 2006” includes z-scored variables: residential density, land use mix using 5 land use types, intersection density * 2, and retail area ratio. The BEH scale includes z-scored variables: residential density, land use mix using 5 land use types, intersection density, retail area ratio, and subway stop density.  Note that the BEH scale does not multiply intersection density by 2 and does include subway density.&lt;/p&gt;
-
-&lt;p&gt;t10_intden_z – Density of unique streets intersections per km2: z-scored.
-t10_sub07d_z – Density of subway stations per km2: z-scored.
-t10_rtlfar_z – Retail floor area ratio: z-scored.
-t10_resdn1_z – Density of residential units: z-scored.
-t10_entrpy_z – Entropy land use mix: z-scored.&lt;/p&gt;
-
-&lt;p&gt;t10_walk_cat – Quintiles of BEH Walkability Scale.&lt;/p&gt;
-
-&lt;p&gt;♠ Please note that the variables in grey text below have not been provided in this deliverable 
-and are only described here to provide context for the variables that are being provided.
-Walkability Index Scale “Component” Variables (these variables are not included in the dataset)
-b1_intden – Density of unique streets intersections per km2.
-b1_sub07d – Density of subway stations per km2.
-b1_rtlfar – Retail floor area ratio – Retail building floor area divided by retail land area in km2.
-b1_resdn1 – Density of res units – Number of residential units divided by total residential building floor area in km2.
-b1_entrpy – Land Use Mix – An entropy measure using the five of the six land use types employed in Frank et al. (2006).  Single- and multi-family residential areas were combined because most housing in New York City is multi-family.  Parcel-level measures of residential, office, and retail floor area were available from the MapPLUTO (version 04c; October 2004-October 2005) database.  We used the MapPLUTO building class codes to identify buildings associated with education (schools) or entertainment (theaters, recreational facilities), and attributed the entire floor area of the identified building to education or entertainment.  The entropy formula used was adapted from Frank et al. (2005), which yielded more plausible results:  Land Use Mix = A/ln(N) where: A= –((b1/a)&lt;em&gt;ln(b1/a)+(b2/a)&lt;/em&gt;ln(b2/a)+…) and b1 is the building floor area covered by the first land use, b2 is the building floor area covered by the second land use, etc., a is the total floor area across the five land uses, and N is the total number of land uses represented in the census tract. Zero values for b1…b5 were set to .000001 to avoid zero or undefined terms.&lt;/p&gt;
-
-&lt;p&gt;Components of the Entropy Measure:
-b1_b1 – Total building area for Education uses in square feet (set to .000001 if 0)
-b1_b2 – Total building area for Entertainment uses in square feet (set to .000001 if 0)
-b1_b3 – Total building area Residential uses in square feet (set to .000001 if 0)
-b1_b4 – Total building area for Retail uses in square feet (set to .000001 if 0)
-b1_b5 – Total building area for Office uses in square feet (set to .000001 if 0)
-b1_a – Total floor area across the five land uses in square feet (set to .000001 if 0)
-b1_n – The total number of land uses represented (between 1 and 5)&lt;/p&gt;
-
-&lt;p&gt;ArcMap Entropy Field Calculation Expression:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;entropy = –((([b1] / [a]) * log ( [b1] / [a] )) + (([b2] / [a]) * log ( [b2] / [a] )) + (([b3] / [a]) * log ( [b3] / [a] )) + (([b4] / [a]) * log ( [b4] / [a] )) + (([b5] / [a]) * log ( [b5] / [a] ))) / log ( [n] )
-&lt;/code&gt;&lt;/pre&gt;
-
-</description>
-        <pubDate>Wed, 31 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://beh-gis.github.io/dictionary/ct2010/2014/12/31/walkability-ct2010.html</link>
-        <guid isPermaLink="true">http://beh-gis.github.io/dictionary/ct2010/2014/12/31/walkability-ct2010.html</guid>
-        
-        
-        <category>dictionary</category>
-        
-        <category>ct2010</category>
-        
-      </item>
-    
-      <item>
-        <title>All Variables - Census Tract 2010</title>
-        <description>&lt;p&gt;local link
-http://localhost:4000/dictionary/ct2010/2014/12/31/all-variables-ct2010.html&lt;/p&gt;
-
-&lt;p&gt;web link
-http://beh-gis.github.io/dictionary/ct2010/2014/12/31/all-variables-ct2010.html&lt;/p&gt;
-</description>
-        <pubDate>Wed, 31 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://beh-gis.github.io/dictionary/ct2010/2014/12/31/all-variables-ct2010.html</link>
-        <guid isPermaLink="true">http://beh-gis.github.io/dictionary/ct2010/2014/12/31/all-variables-ct2010.html</guid>
-        
-        
-        <category>dictionary</category>
-        
-        <category>ct2010</category>
         
       </item>
     

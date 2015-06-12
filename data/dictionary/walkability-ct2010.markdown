@@ -1,6 +1,5 @@
 ---
 layout: page
-title:  "Walkability - Census Tract 2010"
 categories: dictionary ct2010
 ---
 

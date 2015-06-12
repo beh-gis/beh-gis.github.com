@@ -13,7 +13,7 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     
       <link rel="stylesheet" href="css/style.css">   <!-- LOCAL FILE -->
-      <script src="js/mhhi-ct2010_script.js"></script>   <!-- LOCAL FILE -->
+      <script src="js/pedkil19952013-ct2010_script.js"></script>   <!-- LOCAL FILE -->
     </head>
     
     <body onload="init()">
@@ -46,11 +46,11 @@
       <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
       <div id='exports'>
           <p></p>
-          <button onclick='location.href="http://beh-gis.github.io/data/dictionary/mhhi-ct2010.html"'>Median Household Income Data dictionary</button>
+          <button onclick='location.href="http://beh-gis.github.io/data/dictionary/pedkil19952013-ct2010.html"'>Pedestrians Killed 1995-2013 Data dictionary</button>
           <p></p>
-          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi.csv&format=csv&q=SELECT geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010"'>Export Median Household Income data as csv</button>
+          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_alcohol.csv&format=csv&q=SELECT geoid,cdeligibil,ct10alcall,ct10alccl1,ct10alccl2 ,ct10alccl3,ct10alccl4,ct10alccl5 FROM ct10_alcohol_licenses"'>Export Pedestrians Killed 1995-2013 data as csv</button>
           <p></p>
-          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_mhhi&format=shp&q=SELECT the_geom,geoid,t10_057001 FROM ct10_mhhi_acs_2006_2010"'>Export Median Household Income data as shapefile</button>
+          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_alcohol&format=shp&q=SELECT the_geom,geoid,cdeligibil,ct10alcall,ct10alccl1,ct10alccl2 ,ct10alccl3,ct10alccl4,ct10alccl5 FROM ct10_alcohol_licenses"'>Export Pedestrians Killed 1995-2013 data as shapefile</button>
       </div>
     </body>
     </html>

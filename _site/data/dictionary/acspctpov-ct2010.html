@@ -96,7 +96,25 @@
           
         
           
-          <a class="page-link" href="/data/">Data</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/data/">Data Portal</a>
+          
+        
           
         
           
@@ -126,12 +144,23 @@
   </header>
 
   <article class="post-content">
-    <h1 id="variables">Variables</h1>
+    <h2 id="acs-2008-2012-percent-in-poverty-variables">ACS 2008-2012 Percent in Poverty Variables</h2>
+
 <hr />
 
-<h4 id="geoid">geoid</h4>
+<h4 id="geoid"><strong>geoid</strong></h4>
 <p>Unique 11-digit US 2010 Census Tract ID.</p>
 
+<h4 id="t10pcpov"><strong>t10pcpov</strong></h4>
+<p>Percent population in poverty</p>
+
+<hr />
+
+<h4 id="percent-population-in-poverty">Percent population in poverty</h4>
+
+<h4 id="american-community-survey-2008-2012-5-year">American Community Survey 2008-2012 (5-year)</h4>
+<pre><code>( df[geo+'C17002002E'] + df[geo+'C17002003E'] ) / df[geo+'C17002001E']
+</code></pre>
 
   </article>
 

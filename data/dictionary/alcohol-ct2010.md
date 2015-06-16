@@ -11,25 +11,25 @@ categories: dictionary ct2010
 Unique 11-digit US 2010 Census Tract ID.
 
 
-####**cdeligibil**
+####**t10alcelig**
 CDEligible
  
-####**ct10alcall**
+####**t10alcall**
 Count all License types
  
-####**ct10alccl1**
+####**t10alccl1**
 Count On Premise Licenses
  
-####**ct10alccl2**
+####**t10alccl2**
 Count Off Premise Licenses
  
-####**ct10alccl3**
+####**t10alccl3**
 Count Wholesale Licenses
  
-####**ct10alccl4**
+####**t10alccl4**
 Count Pending Licenses
  
-####**ct10alccl5**
+####**t10alccl5**
 Count Disabled Licenses
 
 ---

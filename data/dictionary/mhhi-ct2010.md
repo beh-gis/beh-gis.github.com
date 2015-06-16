@@ -11,7 +11,7 @@ categories: dictionary ct2010
 Unique 11-digit US 2010 Census Tract ID.
 
 
-####**t10_057001**
+####**t10mhhi**
 Median Household Income (t10_057001) from 2008-2012 American Community Survey
 
 ---

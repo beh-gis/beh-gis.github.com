@@ -11,7 +11,7 @@ categories: dictionary ct2010
 Unique 11-digit US 2010 Census Tract ID.
 
 
-####**cttreepct**
+####**t10treepc**
 Percent of Tract Covered with Tree Canopy
 
 ---

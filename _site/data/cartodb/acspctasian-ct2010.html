@@ -38,12 +38,16 @@
       </div>
       <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
       <div id='exports'>
-          <p></p>
+          
           <button onclick='location.href="../../../data/dictionary/acspctasian-ct2010.html"'>ACS 2008-2012 Percent Asian <strong>Data dictionary</strong></button>
           <p></p>
-          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_acspctasian_ct2010.csv&format=csv&q=SELECT geoid,t10pcasian FROM ct10"'>Export ACS 2008-2012 Percent Asian data as <strong>CSV</strong></button>
+          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_acspctasian_ct2010.csv&format=csv&q=SELECT geoid,t10pcasian FROM ct10"'><strong>Export</strong> ACS 2008-2012 Percent Asian data as <strong>CSV</strong></button>
           <p></p>
-          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_acspctasian_ct2010&format=shp&q=SELECT the_geom,geoid,t10pcasian FROM ct10"'>Export ACS 2008-2012 Percent Asian data as <strong>Shapefile</strong></button>
-      </div>
+          <button onclick='location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_acspctasian_ct2010&format=shp&q=SELECT the_geom,geoid,t10pcasian FROM ct10"'><strong>Export</strong> ACS 2008-2012 Percent Asian data as <strong>Shapefile</strong></button>
+       </div>
+       <div id='alldata'>
+          <p></p>
+          <button onclick='location.href="../../../data/download.html"'>Download complete data set</button>
+       </div>
     </body>
     </html>

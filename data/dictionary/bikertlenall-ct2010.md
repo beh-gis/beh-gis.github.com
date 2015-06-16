@@ -3,10 +3,16 @@ layout: page
 categories: dictionary ct2010
 ---
 
-##Bike Routes Length
+##Bike Routes Length Variables
 
-###Variables
 ---
 
-####geoid
+####**geoid**
 Unique 11-digit US 2010 Census Tract ID.
+
+
+####**t10birtlen**
+Bike Routes Length in meters(?)
+
+---
+

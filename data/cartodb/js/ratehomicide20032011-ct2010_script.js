@@ -1,9 +1,12 @@
 var map;
         function init(){
+        
+      var toggler = new L.LayerGroup();
       // initiate leaflet map
       map = new L.Map('map', { 
         center: [40.705,-73.94], 
-        zoom: 11
+        zoom: 11,
+        layers: [toggler]
       })
       //L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
       //  attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
@@ -30,6 +33,7 @@ var map;
                 legends: true
             })
       .addTo(map)
+      .addTo(toggler)
       .on('done', function(layer) {
         // change the query for the first layer
         var subLayerOptions = {
@@ -45,4 +49,13 @@ var map;
       }).on('error', function() {
         //log the error
       });
+      var baseLayers = {
+        //turned off just so can add to L.control.layers
+      };
+
+      var overlays = {
+        "Homicide Rate per 100,000 2003-2011/08 - NY Times Layer On/Off": toggler
+      };
+
+      L.control.layers(baseLayers, overlays).addTo(map);
     }

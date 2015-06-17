@@ -4,7 +4,7 @@ var map;
       var toggler = new L.LayerGroup();
       // initiate leaflet map
       map = new L.Map('map', { 
-        center: [40.705,-73.94], 
+        center: [40.705,-74.00], 
         zoom: 11,
         layers: [toggler]
       })

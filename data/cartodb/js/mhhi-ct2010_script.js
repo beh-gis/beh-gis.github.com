@@ -54,7 +54,7 @@ var map;
       };
 
       var overlays = {
-        "Median Household Income Layer On/Off": toggler
+        "ACS 2008-2012 Median Household Income Layer On/Off": toggler
       };
 
       L.control.layers(baseLayers, overlays).addTo(map);

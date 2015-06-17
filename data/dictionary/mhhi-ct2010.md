@@ -3,7 +3,7 @@ layout: page
 categories: dictionary ct2010
 ---
 
-##Median Household Income Variables
+##ACS 2008-2012 Median Household Income Variables
 
 ---
 

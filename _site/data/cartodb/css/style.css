@@ -7,8 +7,8 @@ html, body {
     position: absolute; 
     top: 136px; 
     left: 45px; 
-    width: 250pt; 
-    height: 340pt; 
+    width: 180pt; 
+    height: 0pt; 
     float: left; 
     background: transparent;
   }

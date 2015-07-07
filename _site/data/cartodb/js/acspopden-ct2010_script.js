@@ -1,12 +1,9 @@
 var map;
         function init(){
-        
-      var toggler = new L.LayerGroup();
       // initiate leaflet map
       map = new L.Map('map', { 
-        center: [40.705,-74.00], 
-        zoom: 11,
-        layers: [toggler]
+        center: [40.705,-73.94], 
+        zoom: 11
       })
       //L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
       //  attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
@@ -19,7 +16,7 @@ var map;
         }).addTo(map);
 
     
-      var layerUrl = "https://dms2203.cartodb.com/api/v2_1/viz/c280e8ba-1130-11e5-a711-0e853d047bba/viz.json";
+      var layerUrl = "https://dms2203.cartodb.com/api/v2/viz/c280e8ba-1130-11e5-a711-0e853d047bba/viz.json";
     
       var sublayers = [];
     
@@ -33,7 +30,6 @@ var map;
                 legends: true
             })
       .addTo(map)
-      .addTo(toggler)
       .on('done', function(layer) {
         // change the query for the first layer
         var subLayerOptions = {
@@ -49,13 +45,4 @@ var map;
       }).on('error', function() {
         //log the error
       });
-      var baseLayers = {
-        //turned off just so can add to L.control.layers
-      };
-
-      var overlays = {
-        "ACS 2008-2012 Population Density-Land Area Layer On/Off": toggler
-      };
-
-      L.control.layers(baseLayers, overlays).addTo(map);
     }

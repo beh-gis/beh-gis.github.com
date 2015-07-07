@@ -16,7 +16,7 @@ var map;
         }).addTo(map);
 
     
-      var layerUrl = "https://dms2203.cartodb.com/api/v2_1/viz/8f0354f2-1511-11e5-9d8c-0e018d66dc29/viz.json";
+      var layerUrl = "https://dms2203.cartodb.com/api/v2/viz/b5f847d8-ab27-11e4-8da3-0e9d821ea90d/viz.json";
     
       var sublayers = [];
     

@@ -1,9 +1,12 @@
 var map;
         function init(){
+        
+      var toggler = new L.LayerGroup();
       // initiate leaflet map
       map = new L.Map('map', { 
-        center: [40.705,-73.94], 
-        zoom: 11
+        center: [40.705,-74.00], 
+        zoom: 11,
+        layers: [toggler]
       })
       //L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
       //  attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
@@ -16,7 +19,7 @@ var map;
         }).addTo(map);
 
     
-      var layerUrl = "https://dms2203.cartodb.com/api/v2/viz/b5f847d8-ab27-11e4-8da3-0e9d821ea90d/viz.json";
+      var layerUrl = "https://dms2203.cartodb.com/api/v2/viz/18a45e40-150d-11e5-998e-0e4fddd5de28/viz.json";
     
       var sublayers = [];
     
@@ -30,6 +33,7 @@ var map;
                 legends: true
             })
       .addTo(map)
+      .addTo(toggler)
       .on('done', function(layer) {
         // change the query for the first layer
         var subLayerOptions = {
@@ -45,4 +49,13 @@ var map;
       }).on('error', function() {
         //log the error
       });
+      var baseLayers = {
+        //turned off just so can add to L.control.layers
+      };
+
+      var overlays = {
+        "Pedestrians Injured 1995-2013 Layer On/Off": toggler
+      };
+
+      L.control.layers(baseLayers, overlays).addTo(map);
     }

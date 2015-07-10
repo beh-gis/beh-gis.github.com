@@ -12,7 +12,7 @@ Unique 11-digit US 2010 Census Tract ID.
 
 
 ####**t10birtlen**
-Bike Routes Length in meters(?)
+Bike Routes Length in meters
 
 ---
 

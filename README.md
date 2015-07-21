@@ -2,7 +2,7 @@
 =================
 
 
-Peter Messeri comments:
+###Peter Messeri comments:
 
 ---
 
@@ -23,7 +23,7 @@ One other idea the above variables refer to one’s I have constructed for 1998-
 
 ---
 
-Michael Weisner comments:
+###Michael Weisner comments:
 
 Hi Andrew,
 
@@ -39,7 +39,7 @@ Michael
 
 ---
 
-Julien Comments: 
+###Julien Comments: 
 
 This looks beautiful Andrew and Dan.
 Here is my wish list of things to add to portal:
@@ -50,6 +50,8 @@ Option to select geo units (e.g., tract, zip, planning district, precinct, schoo
 A auto-manuscript option that automatically writes up findings and submits to a journal
 
 ---
+
+###Andrew's Email:
 
 Guys
  

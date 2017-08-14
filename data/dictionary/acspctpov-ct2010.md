@@ -3,15 +3,15 @@ layout: page
 categories: dictionary ct2010
 ---
 
-##ACS 2008-2012 Percent in Poverty Variables
+## ACS 2008-2012 Percent in Poverty Variables
 
 ---
 
-####**geoid**
+#### **geoid**
 Unique 11-digit US 2010 Census Tract ID.
 
 
-####**t10pcpov**
+#### **t10pcpov**
 Percent population in poverty
 
 ---

@@ -3,42 +3,42 @@ layout: page
 categories: dictionary ct2010
 ---
 
-##Walkability Variables
+## Walkability Variables
 
 ---
 
-####**geoid**
+#### **geoid**
 Unique 11-digit US 2010 Census Tract ID.
 
 
-####**t10km2**
+#### **t10km2**
 Total area of US 2010 Census Tract geography in km2.
  
-####**t10lndkm2**
+#### **t10lndkm2**
 Total land area of US 2010 Census Tract geography in km2 (inland water bodies removed).
  
-####**t10cnt**
+#### **t10cnt**
 Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.
  
-####**t10resdn1**
+#### **t10resdn1**
 Density of residential units: z-scored.
  
-####**t10intden**
+#### **t10intden**
 Density of unique streets intersections per km2: z-scored.
  
-####**t10entrpy**
+#### **t10entrpy**
 Entropy land use mix: z-scored.
  
-####**t10rtlfar**
+#### **t10rtlfar**
 Retail floor area ratio: z-scored.
  
-####**t10sub07d**
+#### **t10sub07d**
 Density of subway stations per km2: z-scored.
  
-####**t10walk**
+#### **t10walk**
 BEH Walkability Scale.
  
-####**t10walkc**
+#### **t10walkc**
 Quintiles of BEH Walkability Scale.
 
 ---

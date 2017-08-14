@@ -3,15 +3,15 @@ layout: page
 categories: dictionary ct2010
 ---
 
-##Tree Canopy Variables
+## Tree Canopy Variables
 
 ---
 
-####**geoid**
+#### **geoid**
 Unique 11-digit US 2010 Census Tract ID.
 
 
-####**t10treepc**
+#### **t10treepc**
 Percent of Tract Covered with Tree Canopy
 
 ---

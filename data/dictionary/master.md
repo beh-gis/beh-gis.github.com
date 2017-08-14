@@ -3,11 +3,11 @@ layout: page
 categories: dictionary ct2010
 ---
 
-###Master List of Variables
+## # Master List of Variables
 
 ---
 
-####**geoid**
+#### **geoid**
 Unique 11-digit US 2010 Census Tract ID.
 
 ---
@@ -15,52 +15,52 @@ Unique 11-digit US 2010 Census Tract ID.
 
 #Walkability Variables
 
-####**t10km2**
+#### **t10km2**
 Total area of US 2010 Census Tract geography in km2.
  
 #Walkability Variables
 
-####**t10lndkm2**
+#### **t10lndkm2**
 Total land area of US 2010 Census Tract geography in km2 (inland water bodies removed).
  
 #Walkability Variables
 
-####**t10cnt**
+#### **t10cnt**
 Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.
  
 #Walkability Variables
 
-####**t10resdn1**
+#### **t10resdn1**
 Density of residential units: z-scored.
  
 #Walkability Variables
 
-####**t10intden**
+#### **t10intden**
 Density of unique streets intersections per km2: z-scored.
  
 #Walkability Variables
 
-####**t10entrpy**
+#### **t10entrpy**
 Entropy land use mix: z-scored.
  
 #Walkability Variables
 
-####**t10rtlfar**
+#### **t10rtlfar**
 Retail floor area ratio: z-scored.
  
 #Walkability Variables
 
-####**t10sub07d**
+#### **t10sub07d**
 Density of subway stations per km2: z-scored.
  
 #Walkability Variables
 
-####**t10walk**
+#### **t10walk**
 BEH Walkability Scale.
  
 #Walkability Variables
 
-####**t10walkc**
+#### **t10walkc**
 Quintiles of BEH Walkability Scale.
 
 --- 
@@ -135,7 +135,7 @@ The total number of land uses represented (between 1 and 5)
  
 #Tree Canopy Variables
 
-####**t10treepc**
+#### **t10treepc**
 Percent of Tract Covered with Tree Canopy
 
 --- 
@@ -145,7 +145,7 @@ The following set of variables regard Tree Canopy.
  
 #ACS 2008-2012 Median Household Income Variables
 
-####**t10mhhi**
+#### **t10mhhi**
 Median Household Income (t10_057001) from 2008-2012 American Community Survey
 
 --- 
@@ -153,37 +153,37 @@ Median Household Income (t10_057001) from 2008-2012 American Community Survey
  
 #Off-Premise Alcohol Licenses Variables
 
-####**t10alcelig**
+#### **t10alcelig**
 CDEligible
  
 #Off-Premise Alcohol Licenses Variables
 
-####**t10alcall**
+#### **t10alcall**
 Count all License types
  
 #Off-Premise Alcohol Licenses Variables
 
-####**t10alccl1**
+#### **t10alccl1**
 Count On Premise Licenses
  
 #Off-Premise Alcohol Licenses Variables
 
-####**t10alccl2**
+#### **t10alccl2**
 Count Off Premise Licenses
  
 #Off-Premise Alcohol Licenses Variables
 
-####**t10alccl3**
+#### **t10alccl3**
 Count Wholesale Licenses
  
 #Off-Premise Alcohol Licenses Variables
 
-####**t10alccl4**
+#### **t10alccl4**
 Count Pending Licenses
  
 #Off-Premise Alcohol Licenses Variables
 
-####**t10alccl5**
+#### **t10alccl5**
 Count Disabled Licenses
 
 --- 
@@ -197,7 +197,7 @@ Information and notes from the NYS-SLA recieved April 2013.
  
 #ACS 2008-2012 Total Population Variables
 
-####**t10totpop**
+#### **t10totpop**
 Total Population Estimate (B01003 - TOTAL POPULATION Universe: Total population) from 2008-2012 American Community Survey
 
 --- 
@@ -205,7 +205,7 @@ Total Population Estimate (B01003 - TOTAL POPULATION Universe: Total population)
  
 #ACS 2008-2012 Population Density-Land Area Variables
 
-####**t10popdens**
+#### **t10popdens**
 Population Density - Total Population Estimate (B01003 - TOTAL POPULATION Universe: Total population) from 2008-2012 American Community Survey / t10lndkm2 - (land area in square km)
 
 --- 
@@ -213,7 +213,7 @@ Population Density - Total Population Estimate (B01003 - TOTAL POPULATION Univer
  
 #ACS 2008-2012 Percent Age 65 and Up Variables
 
-####**t10pcag65u**
+#### **t10pcag65u**
 Percent population 65 years of age and older - American Community Survey 2008-2012 (5-year)
 
 --- 
@@ -222,7 +222,7 @@ Percent population 65 years of age and older - American Community Survey 2008-20
  
 #ACS 2008-2012 Percent in Poverty Variables
 
-####**t10pcpov**
+#### **t10pcpov**
 Percent population in poverty
 
 --- 
@@ -232,7 +232,7 @@ Percent population in poverty
  
 #ACS 2008-2012 Percent Black Variables
 
-####**t10pcblack**
+#### **t10pcblack**
 Percent population Black
 
 --- 
@@ -240,7 +240,7 @@ Percent population Black
  
 #ACS 2008-2012 Percent Asian Variables
 
-####**t10pcasian**
+#### **t10pcasian**
 Percent population Asian
 
 --- 
@@ -249,7 +249,7 @@ Percent population Asian
  
 #ACS 2008-2012 Percent Unemployed Variables
 
-####**t10pcunemp**
+#### **t10pcunemp**
 Percent population 16 years and over who are civilians in the labor force that are unemployed
 
 --- 
@@ -258,7 +258,7 @@ Percent population 16 years and over who are civilians in the labor force that a
  
 #Count Homicide 2003-2011/08 - NY Times Variables
 
-####**t10muc0311**
+#### **t10muc0311**
 Count Homicide 2003-2011/08 - NY Times
 
 --- 
@@ -267,7 +267,7 @@ Count Homicide 2003-2011/08 - NY Times
  
 #Bike Routes Length Variables
 
-####**t10birtlen**
+#### **t10birtlen**
 Bike Routes Length in meters
 
 --- 
@@ -276,7 +276,7 @@ Bike Routes Length in meters
  
 #Pedestrians Killed 1995-2013 Variables
 
-####**t10pek9513**
+#### **t10pek9513**
 Pedestrians Killed 1995-2013
 
 --- 
@@ -285,7 +285,7 @@ Pedestrians Killed 1995-2013
  
 #Pedestrians Injured 1995-2013 Variables
 
-####**t10pei9513**
+#### **t10pei9513**
 Pedestrians Injured 1995-2013
 
 --- 
@@ -294,7 +294,7 @@ Pedestrians Injured 1995-2013
  
 #Bicyclists Killed 1995-2013 Variables
 
-####**t10bik9513**
+#### **t10bik9513**
 Bicyclists Killed 1995-2013
 
 --- 
@@ -303,7 +303,7 @@ Bicyclists Killed 1995-2013
  
 #Bicyclists Injured 1995-2013 Variables
 
-####**t10bii9513**
+#### **t10bii9513**
 Bicyclists Injured 1995-2013
 
 --- 
@@ -312,7 +312,7 @@ Bicyclists Injured 1995-2013
  
 #Count Sidewalk Cafes - 2013/06 Variables
 
-####**t10cntcafe**
+#### **t10cntcafe**
 Count Sidewalk Cafes from Open Data Table released June 21, 2013
 
 --- 

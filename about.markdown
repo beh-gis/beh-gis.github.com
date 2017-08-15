@@ -13,7 +13,7 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 
 ---
 
-####<a name="top"></a>*Menu*
+#### <a name="top"></a>*Menu*
 * [About BEH](#info)
 * [BEH GIS Staff](#staff)
 <!--* [Teaching and GIS Training](#teaching)-->
@@ -28,7 +28,7 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 The Built Environment and Health Project has two Geographers/GIS Analysts at Columbia University, Department of Epidemiology.-->
 ---
 
-##<a name="info"></a>About The Built Environment and Health (BEH) Project
+## <a name="info"></a>About The Built Environment and Health (BEH) Project
 
 Built Environment and Health (BEH) Research Group is an interdisciplinary program of research at Columbia University. Led by epidemiologist **Andrew Rundle** and sociologist **Kathryn Neckerman**, BEH uses spatial data to examine the impact of the built environment, including land use, public transit, and housing on physical activity, diet, obesity, and other aspects of health. The group has participants from public health, social science, and urban planning with a research staff based at the Department of Epidemiology at the Mailman School of Public Health and at the Columbia Population Research Center.  Other members of the team are at New York University, American University and Smith College.
 
@@ -36,11 +36,11 @@ Built Environment and Health (BEH) Research Group is an interdisciplinary progra
 
 ---
 
-###<a name="staff"></a>BEH GIS Staff
+### <a name="staff"></a>BEH GIS Staff
 
 ---
 
-####James Quinn
+#### James Quinn
 
 **Senior Geographer/GIS Analyst**
 
@@ -48,7 +48,7 @@ James Quinn is a Geographer and Senior Geographic Information Systems (GIS) Anal
 
 ---
 
-####Daniel M. Sheehan
+#### Daniel M. Sheehan
 
 **Senior Geographer/GIS Analyst**
 

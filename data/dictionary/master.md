@@ -12,52 +12,52 @@ Unique 11-digit US 2010 Census Tract ID.
 ---
 
 
-#Walkability Variables
+# Walkability Variables
 
 #### **t10km2**
 Total area of US 2010 Census Tract geography in km2.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10lndkm2**
 Total land area of US 2010 Census Tract geography in km2 (inland water bodies removed).
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10cnt**
 Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10resdn1**
 Density of residential units: z-scored.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10intden**
 Density of unique streets intersections per km2: z-scored.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10entrpy**
 Entropy land use mix: z-scored.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10rtlfar**
 Retail floor area ratio: z-scored.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10sub07d**
 Density of subway stations per km2: z-scored.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10walk**
 BEH Walkability Scale.
  
-#Walkability Variables
+# Walkability Variables
 
 #### **t10walkc**
 Quintiles of BEH Walkability Scale.
@@ -132,7 +132,7 @@ The total number of land uses represented (between 1 and 5)
 ### ArcMap Entropy Field Calculation Expression:	
 	entropy = –((([b1] / [a]) * log ( [b1] / [a] )) + (([b2] / [a]) * log ( [b2] / [a] )) + (([b3] / [a]) * log ( [b3] / [a] )) + (([b4] / [a]) * log ( [b4] / [a] )) + (([b5] / [a]) * log ( [b5] / [a] ))) / log ( [n] ) 
  
-#Tree Canopy Variables
+# Tree Canopy Variables
 
 #### **t10treepc**
 Percent of Tract Covered with Tree Canopy
@@ -142,7 +142,7 @@ The following set of variables regard Tree Canopy.
 
  
  
-#ACS 2008-2012 Median Household Income Variables
+# ACS 2008-2012 Median Household Income Variables
 
 #### **t10mhhi**
 Median Household Income (t10_057001) from 2008-2012 American Community Survey
@@ -150,37 +150,37 @@ Median Household Income (t10_057001) from 2008-2012 American Community Survey
 --- 
 [American Community Survey](http://www.census.gov/acs/www/) 
  
-#Off-Premise Alcohol Licenses Variables
+# Off-Premise Alcohol Licenses Variables
 
 #### **t10alcelig**
 CDEligible
  
-#Off-Premise Alcohol Licenses Variables
+# Off-Premise Alcohol Licenses Variables
 
 #### **t10alcall**
 Count all License types
  
-#Off-Premise Alcohol Licenses Variables
+# Off-Premise Alcohol Licenses Variables
 
 #### **t10alccl1**
 Count On Premise Licenses
  
-#Off-Premise Alcohol Licenses Variables
+# Off-Premise Alcohol Licenses Variables
 
 #### **t10alccl2**
 Count Off Premise Licenses
  
-#Off-Premise Alcohol Licenses Variables
+# Off-Premise Alcohol Licenses Variables
 
 #### **t10alccl3**
 Count Wholesale Licenses
  
-#Off-Premise Alcohol Licenses Variables
+# Off-Premise Alcohol Licenses Variables
 
 #### **t10alccl4**
 Count Pending Licenses
  
-#Off-Premise Alcohol Licenses Variables
+# Off-Premise Alcohol Licenses Variables
 
 #### **t10alccl5**
 Count Disabled Licenses
@@ -194,7 +194,7 @@ Information and notes from the NYS-SLA recieved April 2013.
 Information is entered into the agency’s workflow system as permits are received.  Correlations could be made for different variables as a user of the data assesses the information.#### Limitations of Data Use
 The data is straight forward and indicates the facts associated with each permit request. 
  
-#ACS 2008-2012 Total Population Variables
+# ACS 2008-2012 Total Population Variables
 
 #### **t10totpop**
 Total Population Estimate (B01003 - TOTAL POPULATION Universe: Total population) from 2008-2012 American Community Survey
@@ -202,7 +202,7 @@ Total Population Estimate (B01003 - TOTAL POPULATION Universe: Total population)
 --- 
 [American Community Survey](http://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t#) 
  
-#ACS 2008-2012 Population Density-Land Area Variables
+# ACS 2008-2012 Population Density-Land Area Variables
 
 #### **t10popdens**
 Population Density - Total Population Estimate (B01003 - TOTAL POPULATION Universe: Total population) from 2008-2012 American Community Survey / t10lndkm2 - (land area in square km)
@@ -210,7 +210,7 @@ Population Density - Total Population Estimate (B01003 - TOTAL POPULATION Univer
 --- 
 [American Community Survey](http://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t#) 
  
-#ACS 2008-2012 Percent Age 65 and Up Variables
+# ACS 2008-2012 Percent Age 65 and Up Variables
 
 #### **t10pcag65u**
 Percent population 65 years of age and older - American Community Survey 2008-2012 (5-year)
@@ -219,7 +219,7 @@ Percent population 65 years of age and older - American Community Survey 2008-20
 #### Percent population 65 years of age and older in Neighborhood Geography.
 #### American Community Survey 2008-2012 (5-year)	( df[geo+'B01001020E'] + df[geo+'B01001021E'] + df[geo+'B01001022E'] + df[geo+'B01001023E'] + df[geo+'B01001024E'] + df[geo+'B01001025E'] + df[geo+'B01001044E'] + df[geo+'B01001045E'] + df[geo+'B01001046E'] + df[geo+'B01001047E'] +df[geo+'B01001048E'] + df[geo+'B01001049E'] ) / df[geo+'B01001001E'] 
  
-#ACS 2008-2012 Percent in Poverty Variables
+# ACS 2008-2012 Percent in Poverty Variables
 
 #### **t10pcpov**
 Percent population in poverty
@@ -229,7 +229,7 @@ Percent population in poverty
 #### Percent population in poverty 
 #### American Community Survey 2008-2012 (5-year)	( df[geo+'C17002002E'] + df[geo+'C17002003E'] ) / df[geo+'C17002001E'] 
  
-#ACS 2008-2012 Percent Black Variables
+# ACS 2008-2012 Percent Black Variables
 
 #### **t10pcblack**
 Percent population Black
@@ -237,7 +237,7 @@ Percent population Black
 --- 
 #### Percent population Black#### American Community Survey 2008-2012 (5-year)	df[geo+'B02001003E'] / df[geo+'B02001001E'] 
  
-#ACS 2008-2012 Percent Asian Variables
+# ACS 2008-2012 Percent Asian Variables
 
 #### **t10pcasian**
 Percent population Asian
@@ -246,7 +246,7 @@ Percent population Asian
 
 #### Percent population Asian #### American Community Survey 2008-2012 (5-year)	df[geo+'B02001005E'] / df[geo+'B02001001E'] 
  
-#ACS 2008-2012 Percent Unemployed Variables
+# ACS 2008-2012 Percent Unemployed Variables
 
 #### **t10pcunemp**
 Percent population 16 years and over who are civilians in the labor force that are unemployed
@@ -255,7 +255,7 @@ Percent population 16 years and over who are civilians in the labor force that a
 
 #### Percent population 16 years and over who are civilians in the labor force that are unemployed#### American Community Survey 2008-2012 (5-year)	( df[geo+'B23001008E'] + df[geo+'B23001015E'] + df[geo+'B23001022E'] + df[geo+'B23001029E'] + df[geo+'B23001036E'] + df[geo+'B23001043E'] + df[geo+'B23001050E'] + df[geo+'B23001057E'] + df[geo+'B23001064E'] + df[geo+'B23001071E'] + df[geo+'B23001076E'] + df[geo+'B23001081E'] + df[geo+'B23001086E'] + df[geo+'B23001094E'] + df[geo+'B23001101E'] + df[geo+'B23001108E'] + df[geo+'B23001115E'] + df[geo+'B23001122E'] + df[geo+'B23001129E'] + df[geo+'B23001136E'] + df[geo+'B23001143E'] + df[geo+'B23001150E'] + df[geo+'B23001157E'] + df[geo+'B23001162E'] + df[geo+'B23001167E'] + df[geo+'B23001172E'] ) / df[geo+'B23001001E'] 
  
-#Count Homicide 2003-2011/08 - NY Times Variables
+# Count Homicide 2003-2011/08 - NY Times Variables
 
 #### **t10muc0311**
 Count Homicide 2003-2011/08 - NY Times
@@ -264,7 +264,7 @@ Count Homicide 2003-2011/08 - NY Times
 
  
  
-#Bike Routes Length Variables
+# Bike Routes Length Variables
 
 #### **t10birtlen**
 Bike Routes Length in meters
@@ -273,7 +273,7 @@ Bike Routes Length in meters
 
  
  
-#Pedestrians Killed 1995-2013 Variables
+# Pedestrians Killed 1995-2013 Variables
 
 #### **t10pek9513**
 Pedestrians Killed 1995-2013
@@ -282,7 +282,7 @@ Pedestrians Killed 1995-2013
 
  
  
-#Pedestrians Injured 1995-2013 Variables
+# Pedestrians Injured 1995-2013 Variables
 
 #### **t10pei9513**
 Pedestrians Injured 1995-2013
@@ -291,7 +291,7 @@ Pedestrians Injured 1995-2013
 
  
  
-#Bicyclists Killed 1995-2013 Variables
+# Bicyclists Killed 1995-2013 Variables
 
 #### **t10bik9513**
 Bicyclists Killed 1995-2013
@@ -300,7 +300,7 @@ Bicyclists Killed 1995-2013
 
  
  
-#Bicyclists Injured 1995-2013 Variables
+# Bicyclists Injured 1995-2013 Variables
 
 #### **t10bii9513**
 Bicyclists Injured 1995-2013
@@ -309,7 +309,7 @@ Bicyclists Injured 1995-2013
 
  
  
-#Count Sidewalk Cafes - 2013/06 Variables
+# Count Sidewalk Cafes - 2013/06 Variables
 
 #### **t10cntcafe**
 Count Sidewalk Cafes from Open Data Table released June 21, 2013

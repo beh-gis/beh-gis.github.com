@@ -1,5 +1,4 @@
 ---
-layout: post
 categories: dictionary ct2010
 ---
 

@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 
 ## # Master List of Variables
 

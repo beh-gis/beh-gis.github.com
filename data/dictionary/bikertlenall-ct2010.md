@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 
 ## Bike Routes Length Variables
 

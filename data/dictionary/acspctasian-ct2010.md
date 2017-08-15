@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 
 ## ACS 2008-2012 Percent Asian Variables
 

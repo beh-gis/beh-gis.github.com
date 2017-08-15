@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 
 ## Count Sidewalk Cafes - 2013/06 Variables
 

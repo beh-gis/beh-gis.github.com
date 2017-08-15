@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 
 ## Tree Canopy Variables
 

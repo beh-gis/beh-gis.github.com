@@ -1,6 +1,4 @@
----
-categories: dictionary ct2010
----
+
 
 ## ACS 2008-2012 Percent in Poverty Variables
 

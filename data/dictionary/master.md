@@ -1,6 +1,4 @@
----
-categories: dictionary ct2010
----
+
 
 ## # Master List of Variables
 

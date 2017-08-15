@@ -1,6 +1,4 @@
----
-categories: dictionary ct2010
----
+
 
 ## Bike Routes Length Variables
 

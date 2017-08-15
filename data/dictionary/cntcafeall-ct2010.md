@@ -1,6 +1,4 @@
----
-categories: dictionary ct2010
----
+
 
 ## Count Sidewalk Cafes - 2013/06 Variables
 

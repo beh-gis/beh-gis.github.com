@@ -1,6 +1,4 @@
----
-categories: dictionary ct2010
----
+
 
 ## Count Homicide 2003-2011/08 - NY Times Variables
 

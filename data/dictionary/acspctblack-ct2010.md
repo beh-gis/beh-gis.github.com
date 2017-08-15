@@ -1,5 +1,6 @@
 ---
 layout: default
+exclude: true
 ---
 
 ## ACS 2008-2012 Percent Black Variables

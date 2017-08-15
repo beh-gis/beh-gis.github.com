@@ -1,5 +1,6 @@
 ---
 layout: default
+exclude: true
 ---
 
 ## Off-Premise Alcohol Licenses Variables

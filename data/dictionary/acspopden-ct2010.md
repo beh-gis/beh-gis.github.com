@@ -1,5 +1,6 @@
 ---
 layout: default
+exclude: true
 ---
 
 ## ACS 2008-2012 Population Density-Land Area Variables

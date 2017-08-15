@@ -1,5 +1,6 @@
 ---
 layout: default
+exclude: true
 ---
 
 ## ACS 2008-2012 Percent Age 65 and Up Variables

@@ -1,5 +1,6 @@
 ---
 layout: default
+exclude: true
 ---
 
 ## Count Homicide 2003-2011/08 - NY Times Variables
